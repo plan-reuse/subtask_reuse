@@ -1,0 +1,16 @@
+move | Robot moves from one region to another
+open_container | Robot opens a container
+close_container | Robot closes a container
+pickup_from_region | Robot picks up a movable object from a region
+putdown_to_region | Robot puts down a movable object to a region
+pickup_from_container | Robot picks up a movable object from a container
+putdown_to_container | Robot puts down a movable object to a container
+put_food_in_cookware | Robot puts food into cookware
+take_food_from_cookware | Robot takes food from cookware
+place_food_on_utensil | Robot places food on utensil
+take_food_from_utensil | Robot takes food from utensil
+place_cookware_on_stovetop | Robot places cookware on stovetop
+remove_cookware_from_stovetop | Robot removes cookware from stovetop
+turn_on_stove | Robot turns on the stove
+turn_off_stove | Robot turns off the stove
+wait_for_food_to_cook | Wait for food to cook (happens automatically when food in cookware is on a turned-on stovetop)

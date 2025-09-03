@@ -1,0 +1,55 @@
+Task: cook a potato
+Total subtasks: 4
+Subtasks solved: 4/4
+Knowledge base retrievals: 0
+Classical planner calls: 4
+Total actions in complete plan: 10
+Knowledge base entries: 4
+
+Subtask-1: Move to the fridge and pick up the potato.
+robot_init: (at_robot pr2 kitchen_corner)
+Goal-1 (pddl): (and (at_robot pr2 fridge) (holding pr2 potato))
+Plan source: Classical Planner
+Actions (2):
+  1. move pr2 kitchen_corner fridge
+  2. pickup_from_container pr2 potato fridge
+
+Subtask-2: Move to countertop_2 and place the potato in the pot.
+robot_init: (at_robot pr2 fridge)
+Goal-2 (pddl): (and (at_robot pr2 countertop_2) (in_cookware potato pot))
+Plan source: Classical Planner
+Actions (2):
+  1. move pr2 fridge countertop_2
+  2. put_food_in_cookware pr2 potato pot countertop_2
+
+Subtask-3: Move to the stove with the pot, place the pot on the stovetop, and turn on the stove.
+robot_init: (at_robot pr2 countertop_2)
+Goal-3 (pddl): (and (at_robot pr2 stove) (on_stovetop pot stove) (turned_on stove))
+Plan source: Classical Planner
+Actions (4):
+  1. pickup_from_region pr2 pot countertop_2
+  2. move pr2 countertop_2 stove
+  3. place_cookware_on_stovetop pr2 pot stove
+  4. turn_on_stove pr2 stove
+
+Subtask-4: Wait for the potato to cook, then turn off the stove.
+robot_init: (at_robot pr2 stove)
+Goal-4 (pddl): (and (at_robot pr2 stove) (cooked potato) (turned_off stove))
+Plan source: Classical Planner
+Actions (2):
+  1. wait_for_food_to_cook stove pot potato
+  2. turn_off_stove pr2 stove
+
+==================================================
+COMPLETE ACTION PLAN FOR SIMULATION
+==================================================
+ 1. move pr2 kitchen_corner fridge
+ 2. pickup_from_container pr2 potato fridge
+ 3. move pr2 fridge countertop_2
+ 4. put_food_in_cookware pr2 potato pot countertop_2
+ 5. pickup_from_region pr2 pot countertop_2
+ 6. move pr2 countertop_2 stove
+ 7. place_cookware_on_stovetop pr2 pot stove
+ 8. turn_on_stove pr2 stove
+ 9. wait_for_food_to_cook stove pot potato
+10. turn_off_stove pr2 stove

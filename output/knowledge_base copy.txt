@@ -1,0 +1,32 @@
+knowledge_base = {
+    (
+        "goal: (and (at_robot pr2 fridge) (holding pr2 <food>))",
+        "robot_init: (at_robot pr2 kitchen_corner)"
+    ): [
+        "move pr2 kitchen_corner fridge",
+        "pickup_from_container pr2 <food> fridge",
+    ],
+    (
+        "goal: (and (at_robot pr2 countertop_2) (in_cookware <food> pot))",
+        "robot_init: (at_robot pr2 fridge)"
+    ): [
+        "move pr2 fridge countertop_2",
+        "put_food_in_cookware pr2 <food> pot countertop_2",
+    ],
+    (
+        "goal: (and (at_robot pr2 stove) (on_stovetop pot stove) (turned_on stove))",
+        "robot_init: (at_robot pr2 countertop_2)"
+    ): [
+        "pickup_from_region pr2 pot countertop_2",
+        "move pr2 countertop_2 stove",
+        "place_cookware_on_stovetop pr2 pot stove",
+        "turn_on_stove pr2 stove",
+    ],
+    (
+        "goal: (and (at_robot pr2 stove) (cooked <food>) (turned_off stove))",
+        "robot_init: (at_robot pr2 stove)"
+    ): [
+        "wait_for_food_to_cook stove pot <food>",
+        "turn_off_stove pr2 stove",
+    ]
+}

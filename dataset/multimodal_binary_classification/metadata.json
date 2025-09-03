@@ -1,0 +1,45 @@
+{
+  "classes": [
+    "grocery",
+    "liquid"
+  ],
+  "class_mapping": {
+    "Apple": "grocery",
+    "Avocado": "grocery",
+    "Banana": "grocery",
+    "Kiwi": "grocery",
+    "Lemon": "grocery",
+    "Lime": "grocery",
+    "Mango": "grocery",
+    "Melon": "grocery",
+    "Nectarine": "grocery",
+    "Orange": "grocery",
+    "Papaya": "grocery",
+    "Passion-Fruit": "grocery",
+    "Peach": "grocery",
+    "Pear": "grocery",
+    "Pineapple": "grocery",
+    "Plum": "grocery",
+    "Pomegranate": "grocery",
+    "Red-Grapefruit": "grocery",
+    "Satsumas": "grocery",
+    "Juice": "liquid",
+    "Milk": "liquid",
+    "Soy-Milk": "liquid",
+    "Oat-Milk": "liquid",
+    "Sour-Milk": "liquid"
+  },
+  "total_items": 48,
+  "class_counts": {
+    "grocery": 28,
+    "liquid": 20
+  },
+  "train_samples": 1719,
+  "val_samples": 176,
+  "description": "Multi-modal binary classification: fruits (grocery) vs liquid items",
+  "data_format": {
+    "images": "JPG format, stored in images/ subdirectory",
+    "descriptions": "Text files, stored in descriptions/ subdirectory",
+    "manifests": "JSON files linking images, text, and labels"
+  }
+}

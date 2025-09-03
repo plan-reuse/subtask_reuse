@@ -1,0 +1,17 @@
+Subtask 1: Move to the opened fridge and pick up the chicken.
+PDDL Goal 1: (and (at_robot pr2 fridge) (holding pr2 chicken))
+
+Subtask 2: Move to countertop_2 and put the chicken in the pot.
+PDDL Goal 2: (and (at_robot pr2 countertop_2) (in_cookware chicken pot))
+
+Subtask 3: Move to the opened cabinet and pick up the salt.
+PDDL Goal 3: (and (at_robot pr2 cabinet) (holding pr2 salt))
+
+Subtask 4: Move to countertop_2 and add the salt to the pot with chicken.
+PDDL Goal 4: (and (at_robot pr2 countertop_2) (in_cookware salt pot) (in_cookware chicken pot))
+
+Subtask 5: Move to the stove with the pot, place the pot on the stovetop and turn on the stove.
+PDDL Goal 5: (and (at_robot pr2 stove) (on_stovetop pot stove) (turned_on stove))
+
+Subtask 6: Wait for the chicken to cook and then turn off the stove.
+PDDL Goal 6: (and (at_robot pr2 stove) (cooked chicken) (turned_off stove))

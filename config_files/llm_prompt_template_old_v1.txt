@@ -1,0 +1,44 @@
+Task: {task_instruction}
+
+I will provide you with information about a kitchen domain, including available predicates, 
+actions, objects, and their initial states. Your job is to break down the main task 
+into natural language subtasks that need to be completed in sequence, 
+and provide the corresponding PDDL goal for each subtask.
+
+Available Predicates:
+{predicates_content}
+
+Available Actions:
+{actions_content}
+
+Objects by Type:
+{objects_content}
+
+Initial State:
+{init_state_content}
+
+Based on the task description, available actions, object list, and initial states, 
+generate a list of subtasks in natural language that would need to be completed 
+to achieve the goal.
+
+Requirements:
+1. Each subtask should be a clear, concise instruction 
+in natural language in a single sentence
+
+2. Explicitly include the objects involved in each subtask
+
+3. Make sure the subtasks follow a logical sequence to achieve the goal
+
+4. Only include actions that are possible given the predicates and actions available
+
+5. For each natural language subtask, provide the corresponding 
+PDDL goal that represents the desired state after completing that subtask
+
+Format the response as follows:
+Subtask 1: [Natural language subtask]
+PDDL Goal 1: [PDDL goal expression]
+
+Subtask 2: [Natural language subtask]
+PDDL Goal 2: [PDDL goal expression]
+
+...and so on.

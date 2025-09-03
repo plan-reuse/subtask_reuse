@@ -1,0 +1,7 @@
+"robot": ["pr2"],
+"region": ["kitchen_corner", "countertop_1", "countertop_2", "sink"],
+"container": ["fridge", "cabinet"],
+"stovetop": ["stove"],
+"utensil": ["plate"],
+"cookware": ["pot"],
+"food": ["salt", "pepper", "chicken", "potato", "tomato", "cabbage", "zucchini", "artichoke", "oil", "vinegar", "milk"]

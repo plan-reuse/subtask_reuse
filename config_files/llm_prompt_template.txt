@@ -1,0 +1,102 @@
+You are given a task for a robot to perform in a kitchen environment.
+
+Task: {task_instruction}
+
+Your job is to break down this task into a sequence of subtasks that the robot can perform. Each subtask
+should be described in natural language and should include a corresponding PDDL goal expression using valid
+PDDL syntax.
+
+You are also provided with the following domain information to help you generate valid subtasks.
+
+-------------------------------
+Provided Domain Information:
+-------------------------------
+
+Available Predicates:
+{predicates_content}
+
+Available Actions:
+{actions_content}
+
+Objects by Type:
+{objects_content}
+
+Initial State:
+{init_state_content}
+
+
+
+Your output should meet the following requirements:
+
+1. Generate a sequence of subtasks that together accomplish the overall task: {task_instruction}
+
+2. Subtask Definition:
+   - A subtask is a self-contained interaction between the robot and a specific object–target pair, 
+   where the object is manipulated, placed, retrieved, or transformed in relation to a single target entity 
+   (e.g., a region, container, utensil, cookware, or appliance).
+   - Each subtask must complete a full interaction for that pair (e.g., retrieving, placing, cooking). 
+   - Do not split trivial atomic actions (like only moving to the fridge). 
+
+3. For each subtask, provide:
+   - A concise natural language instruction in one sentence describing what the robot must do.
+   - A valid PDDL goal expression that represents the desired world state after completing that subtask.
+
+4. All PDDL goal expressions must follow correct Lisp-style syntax.
+   - For multiple goals, use compound PDDL syntax such as: (and (predicate1 ...) (predicate2 ...))
+   - Do NOT use natural language terms like AND, OR, or NOT in the PDDL goals.
+
+5. Important Clarification: Each PDDL goal must represent the robot’s and object’s situation at the end of the subtask only. 
+Do not include how the robot got there, or where it was previously.
+
+-------------------------------
+Output Format (strictly follow this):
+-------------------------------
+
+Subtask 1: [Natural language subtask]
+PDDL Goal 1: [Valid PDDL goal]
+
+Subtask 2: [Natural language subtask]
+PDDL Goal 2: [Valid PDDL goal]
+
+...
+
+Subtask N: [Natural language subtask]
+PDDL Goal N: [Valid PDDL goal]
+
+--------------------------------------------------------------
+Example-1 for a cooking task ("Prepare a dish by cooking chicken")
+--------------------------------------------------------------
+
+Subtask 1: Move to the opened fridge, and pick the chicken.
+PDDL Goal 1: (and (at_robot pr2 fridge) (holding pr2 chicken))
+
+Subtask 2: Move to the countertop_2 and put the chicken in the pot.
+PDDL Goal 2: (and (at_robot pr2 countertop_2) (in_cookware chicken pot))
+
+Subtask 3: Move to the stove with the pot, Place the pot on the stovetop and turn on the stove.
+PDDL Goal 3: (and (at_robot pr2 stove) (on_stovetop pot stove) (turned_on stove))
+
+Subtask 4: Wait for the chicken to cook and then turn off the stove.
+PDDL Goal 4: (and (at_robot pr2 stove) (cooked chicken) (turned_off stove))
+
+
+-------------------------------
+What NOT to do (Negative Example)
+-------------------------------
+A) Too granular goal:
+Subtask: Move to the fridge.
+Bad PDDL Goal: (at_robot pr2 fridge)
+Why wrong: This encodes only an intermediate waypoint, not a meaningful object interaction or outcome state.
+
+
+
+-------------------------------
+Important Notes:
+-------------------------------
+- Ensure the subtasks follow a logical and feasible sequence to complete the given task: {task_instruction}
+- Be precise and consistent in naming objects and locations.
+- Always double-check that compound PDDL goals are wrapped properly in (and ...).
+- Encode only the final post-subtask world state; avoid path/history facts and any conflicting predicates 
+   (e.g., door_open and door_closed on the same container, or multiple at_robot locations).
+
+

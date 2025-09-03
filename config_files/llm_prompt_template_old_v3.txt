@@ -1,0 +1,85 @@
+You are given a task for a robot to perform in a kitchen environment.
+
+Task: {task_instruction}
+
+Your job is to break down this task into a sequence of subtasks that the robot can perform. Each subtask
+should be described in natural language and should include a corresponding PDDL goal expression using valid
+PDDL syntax.
+
+You are also provided with the following domain information to help you generate valid subtasks.
+
+-------------------------------
+Provided Domain Information:
+-------------------------------
+
+Available Predicates:
+{predicates_content}
+
+Available Actions:
+{actions_content}
+
+Objects by Type:
+{objects_content}
+
+Initial State:
+{init_state_content}
+
+
+
+Your output should meet the following requirements:
+
+1. Generate a sequence of subtasks that together accomplish the overall task: {task_instruction}
+
+2. Each subtask should be centered around a single object or tightly related object group (e.g., chicken,
+potato, or pot). And each subtask must involve a meaningful group of actions, not a single atomic step. Avoid
+splitting simple operations (like "move to fridge" or "open door") into separate subtasks. Instead,
+group them into a single subtask that completes a full object interaction, such as retrieving an
+item and placing it where it will be used.
+
+3. For each subtask, provide:
+   - A concise natural language instruction in one sentence describing what the robot must do.
+   - A valid PDDL goal expression that represents the desired world state after completing that subtask.
+
+4. All PDDL goal expressions must follow correct Lisp-style syntax.
+   - For multiple goals, use compound PDDL syntax such as: (and (predicate1 ...) (predicate2 ...))
+   - Do NOT use natural language terms like AND, OR, or NOT in the PDDL goals.
+
+
+-------------------------------
+Output Format (strictly follow this):
+-------------------------------
+
+Subtask 1: [Natural language subtask]
+PDDL Goal 1: [Valid PDDL goal]
+
+Subtask 2: [Natural language subtask]
+PDDL Goal 2: [Valid PDDL goal]
+
+...
+
+Subtask N: [Natural language subtask]
+PDDL Goal N: [Valid PDDL goal]
+
+-------------------------------
+Examples:
+-------------------------------
+
+Example Subtask: Retrieve the pot from the cabinet and place it on countertop 2.
+PDDL Goal: (at pot countertop_2)
+
+Example Subtask: Retrieve the potato from the fridge and place it into the pot.
+PDDL Goal: (in_cookware potato pot)
+
+Example Subtask: Place the pot on the stovetop and turn on the stove to cook the food
+PDDL Goal: (and (on_stovetop pot stove) (turned_on stove))
+
+Example Subtask: Take the pot from the stovetop to countertop and Turn off the stove
+PDDL Goal: (and (at pot countertop) (turned_off stove))
+
+-------------------------------
+Important Notes:
+-------------------------------
+- Ensure the subtasks follow a logical and feasible sequence to complete the given task: {task_instruction}
+- Be precise and consistent in naming objects and locations.
+- Always double-check that compound PDDL goals are wrapped properly in `(and ...)`.
+

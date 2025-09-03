@@ -1,0 +1,70 @@
+You are given a task for a robot to perform in a kitchen environment:
+
+Task: {task_instruction}
+
+Your job is to break down this task into a sequence of subtasks that the robot can perform. Each subtask
+should be described in natural language and should include a corresponding PDDL goal expression using valid
+PDDL syntax.
+
+You are also provided with the following domain information to help you generate valid subtasks:
+
+Available Predicates:
+{predicates_content}
+
+Available Actions:
+{actions_content}
+
+Objects by Type:
+{objects_content}
+
+Initial State:
+{init_state_content}
+
+
+Your output should meet the following requirements:
+
+1. Generate a sequence of subtasks that together accomplish the overall task: {task_instruction}
+
+2. For each subtask, provide:
+   - A concise natural language instruction in one sentence describing what the robot must do.
+   - A valid PDDL goal expression that represents the desired world state after completing that subtask.
+
+3. All PDDL goal expressions must follow correct Lisp-style syntax.
+   - For multiple goals, use compound PDDL syntax such as: (and (predicate1 ...) (predicate2 ...))
+   - Do NOT use natural language terms like AND, OR, or NOT in the PDDL goals.
+
+
+-------------------------------
+Output Format (strictly follow this):
+-------------------------------
+Subtask 1: [Natural language subtask]
+PDDL Goal 1: [Valid PDDL goal]
+
+Subtask 2: [Natural language subtask]
+PDDL Goal 2: [Valid PDDL goal]
+
+...
+
+Subtask N: [Natural language subtask]
+PDDL Goal N: [Valid PDDL goal]
+
+-------------------------------
+Examples:
+-------------------------------
+
+Subtask 1: Move the robot to the fridge.
+PDDL Goal 1: (at_robot pr2 fridge)
+
+Subtask 2: Pick up the tomato from the fridge.
+PDDL Goal 2: (holding pr2 tomato)
+
+Subtask 3: Place the tomato and potato on the countertop 2.
+PDDL Goal 3: (and (at tomato countertop_2) (at potato countertop_2))
+
+-------------------------------
+Important Notes:
+-------------------------------
+- Ensure the subtasks follow a logical and feasible sequence to complete the task: {task_instruction}
+- Be precise and consistent in naming objects and locations.
+- Always double-check that compound PDDL goals are wrapped properly in `(and ...)`.
+

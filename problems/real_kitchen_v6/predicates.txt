@@ -1,0 +1,13 @@
+at_robot ?r - robot ?l - region | Robot r is at location l
+at ?m - movable ?l - region | Movable object m is at location l
+inside ?m - movable ?c - container | Movable object m is inside container c
+in_cookware ?f - food ?cw - cookware | Food f is in cookware cw
+on_utensil ?f - food ?u - utensil | Food f is on utensil u
+door_open ?c - container | Container c's door is open
+door_closed ?c - container | Container c's door is closed
+holding ?r - robot ?m - movable | Robot r is holding movable object m
+handempty ?r - robot | Robot r's hand is empty
+turned_on ?s - stovetop | Stovetop s is turned on
+turned_off ?s - stovetop | Stovetop s is turned off
+on_stovetop ?cw - cookware ?s - stovetop | Cookware cw is on stovetop s
+cooked ?f - food | Food f is cooked

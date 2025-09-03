@@ -1,0 +1,17 @@
+Run Configuration
+================
+Timestamp: 2025-08-28 10:49:34
+Task: cook chicken with salt
+Use LLM: True
+Fallback file: None
+Model: gpt-4o
+Max tokens: 2000
+Generation time: 8.81 seconds
+Knowledge base enabled: True
+Use simulation: True
+Output directory: /home/shaid/Documents/kitchen-worlds/plan_reuse/output/run_20250828_104850
+Domain file: /home/shaid/Documents/kitchen-worlds/plan_reuse/problems/pybullet_kitchen/domain.pddl
+Problem file: /home/shaid/Documents/kitchen-worlds/plan_reuse/problems/pybullet_kitchen/empty_problem.pddl
+Total actions executed: 14
+Knowledge base retrievals: 4
+Classical planner calls: 2

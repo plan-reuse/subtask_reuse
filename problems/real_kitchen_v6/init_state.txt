@@ -1,0 +1,20 @@
+(at_robot stretch_robot kitchen_corner) | The robot named Stretch is located in the kitchen corner area.
+(handempty stretch_robot) | Stretch's hand is currently empty.
+(at bowl countertop) | The bowl is placed on the countertop.
+(at plate countertop) | The plate is placed on the countertop.
+(at pot countertop) | The pot is placed on the countertop.
+(at pan countertop) | The pan is placed on the countertop.
+(inside pancake cabinet) | The pancake is stored inside the cabinet.
+(inside bread cabinet) | The bread is stored inside the cabinet.
+(inside salt cabinet) | The salt is stored inside the cabinet.
+(inside butter cabinet) | The butter is stored inside the cabinet.
+(inside chicken fridge) | The chicken is stored inside the fridge.
+(inside fish fridge) | The fish is stored inside the fridge.
+(inside potato fridge) | The potato is stored inside the fridge.
+(inside tomato fridge) | The tomato is stored inside the fridge.
+(inside cabbage fridge) | The cabbage is stored inside the fridge.
+(inside lettuce fridge) | The lettuce is stored inside the fridge.
+(inside apple fridge) | The apple is stored inside the fridge.
+(door_closed fridge) | The fridge door is currently closed.
+(door_closed cabinet) | The cabinet door is currently closed.
+(turned_off stove) | The stove is currently turned off.

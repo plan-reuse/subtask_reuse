@@ -1,0 +1,1586 @@
+[
+  {
+    "image_path": "images/Golden-Delicious_001.jpg",
+    "text_path": "descriptions/Golden-Delicious_001.txt",
+    "label": "grocery",
+    "class_name": "Golden-Delicious",
+    "coarse_class": "Apple",
+    "category": "Fruit",
+    "description": "Golden Delicious has a white juicy pulp and a greenish yellow shell. The taste is mellow and sweet, making Golden Delicious suitable for desserts."
+  },
+  {
+    "image_path": "images/Golden-Delicious_002.jpg",
+    "text_path": "descriptions/Golden-Delicious_002.txt",
+    "label": "grocery",
+    "class_name": "Golden-Delicious",
+    "coarse_class": "Apple",
+    "category": "Fruit",
+    "description": "Golden Delicious has a white juicy pulp and a greenish yellow shell. The taste is mellow and sweet, making Golden Delicious suitable for desserts."
+  },
+  {
+    "image_path": "images/Golden-Delicious_003.jpg",
+    "text_path": "descriptions/Golden-Delicious_003.txt",
+    "label": "grocery",
+    "class_name": "Golden-Delicious",
+    "coarse_class": "Apple",
+    "category": "Fruit",
+    "description": "Golden Delicious has a white juicy pulp and a greenish yellow shell. The taste is mellow and sweet, making Golden Delicious suitable for desserts."
+  },
+  {
+    "image_path": "images/Golden-Delicious_004.jpg",
+    "text_path": "descriptions/Golden-Delicious_004.txt",
+    "label": "grocery",
+    "class_name": "Golden-Delicious",
+    "coarse_class": "Apple",
+    "category": "Fruit",
+    "description": "Golden Delicious has a white juicy pulp and a greenish yellow shell. The taste is mellow and sweet, making Golden Delicious suitable for desserts."
+  },
+  {
+    "image_path": "images/Golden-Delicious_005.jpg",
+    "text_path": "descriptions/Golden-Delicious_005.txt",
+    "label": "grocery",
+    "class_name": "Golden-Delicious",
+    "coarse_class": "Apple",
+    "category": "Fruit",
+    "description": "Golden Delicious has a white juicy pulp and a greenish yellow shell. The taste is mellow and sweet, making Golden Delicious suitable for desserts."
+  },
+  {
+    "image_path": "images/Golden-Delicious_006.jpg",
+    "text_path": "descriptions/Golden-Delicious_006.txt",
+    "label": "grocery",
+    "class_name": "Golden-Delicious",
+    "coarse_class": "Apple",
+    "category": "Fruit",
+    "description": "Golden Delicious has a white juicy pulp and a greenish yellow shell. The taste is mellow and sweet, making Golden Delicious suitable for desserts."
+  },
+  {
+    "image_path": "images/Granny-Smith_001.jpg",
+    "text_path": "descriptions/Granny-Smith_001.txt",
+    "label": "grocery",
+    "class_name": "Granny-Smith",
+    "coarse_class": "Apple",
+    "category": "Fruit",
+    "description": "Granny Smith is a green apple with white, firm pulp and a clear acidity in the flavor."
+  },
+  {
+    "image_path": "images/Granny-Smith_002.jpg",
+    "text_path": "descriptions/Granny-Smith_002.txt",
+    "label": "grocery",
+    "class_name": "Granny-Smith",
+    "coarse_class": "Apple",
+    "category": "Fruit",
+    "description": "Granny Smith is a green apple with white, firm pulp and a clear acidity in the flavor."
+  },
+  {
+    "image_path": "images/Granny-Smith_003.jpg",
+    "text_path": "descriptions/Granny-Smith_003.txt",
+    "label": "grocery",
+    "class_name": "Granny-Smith",
+    "coarse_class": "Apple",
+    "category": "Fruit",
+    "description": "Granny Smith is a green apple with white, firm pulp and a clear acidity in the flavor."
+  },
+  {
+    "image_path": "images/Granny-Smith_004.jpg",
+    "text_path": "descriptions/Granny-Smith_004.txt",
+    "label": "grocery",
+    "class_name": "Granny-Smith",
+    "coarse_class": "Apple",
+    "category": "Fruit",
+    "description": "Granny Smith is a green apple with white, firm pulp and a clear acidity in the flavor."
+  },
+  {
+    "image_path": "images/Granny-Smith_005.jpg",
+    "text_path": "descriptions/Granny-Smith_005.txt",
+    "label": "grocery",
+    "class_name": "Granny-Smith",
+    "coarse_class": "Apple",
+    "category": "Fruit",
+    "description": "Granny Smith is a green apple with white, firm pulp and a clear acidity in the flavor."
+  },
+  {
+    "image_path": "images/Granny-Smith_006.jpg",
+    "text_path": "descriptions/Granny-Smith_006.txt",
+    "label": "grocery",
+    "class_name": "Granny-Smith",
+    "coarse_class": "Apple",
+    "category": "Fruit",
+    "description": "Granny Smith is a green apple with white, firm pulp and a clear acidity in the flavor."
+  },
+  {
+    "image_path": "images/Pink-Lady_001.jpg",
+    "text_path": "descriptions/Pink-Lady_001.txt",
+    "label": "grocery",
+    "class_name": "Pink-Lady",
+    "coarse_class": "Apple",
+    "category": "Fruit",
+    "description": "Pink Lady reminds of Royal Gala, though it is an even sweeter and crispier apple."
+  },
+  {
+    "image_path": "images/Pink-Lady_002.jpg",
+    "text_path": "descriptions/Pink-Lady_002.txt",
+    "label": "grocery",
+    "class_name": "Pink-Lady",
+    "coarse_class": "Apple",
+    "category": "Fruit",
+    "description": "Pink Lady reminds of Royal Gala, though it is an even sweeter and crispier apple."
+  },
+  {
+    "image_path": "images/Pink-Lady_003.jpg",
+    "text_path": "descriptions/Pink-Lady_003.txt",
+    "label": "grocery",
+    "class_name": "Pink-Lady",
+    "coarse_class": "Apple",
+    "category": "Fruit",
+    "description": "Pink Lady reminds of Royal Gala, though it is an even sweeter and crispier apple."
+  },
+  {
+    "image_path": "images/Pink-Lady_004.jpg",
+    "text_path": "descriptions/Pink-Lady_004.txt",
+    "label": "grocery",
+    "class_name": "Pink-Lady",
+    "coarse_class": "Apple",
+    "category": "Fruit",
+    "description": "Pink Lady reminds of Royal Gala, though it is an even sweeter and crispier apple."
+  },
+  {
+    "image_path": "images/Pink-Lady_005.jpg",
+    "text_path": "descriptions/Pink-Lady_005.txt",
+    "label": "grocery",
+    "class_name": "Pink-Lady",
+    "coarse_class": "Apple",
+    "category": "Fruit",
+    "description": "Pink Lady reminds of Royal Gala, though it is an even sweeter and crispier apple."
+  },
+  {
+    "image_path": "images/Royal-Gala_001.jpg",
+    "text_path": "descriptions/Royal-Gala_001.txt",
+    "label": "grocery",
+    "class_name": "Royal-Gala",
+    "coarse_class": "Apple",
+    "category": "Fruit",
+    "description": "Royal Gala is a crispy and very juicy apple, with yellow-white pulp. The peel is thin with a red yellow speckled color."
+  },
+  {
+    "image_path": "images/Royal-Gala_002.jpg",
+    "text_path": "descriptions/Royal-Gala_002.txt",
+    "label": "grocery",
+    "class_name": "Royal-Gala",
+    "coarse_class": "Apple",
+    "category": "Fruit",
+    "description": "Royal Gala is a crispy and very juicy apple, with yellow-white pulp. The peel is thin with a red yellow speckled color."
+  },
+  {
+    "image_path": "images/Royal-Gala_003.jpg",
+    "text_path": "descriptions/Royal-Gala_003.txt",
+    "label": "grocery",
+    "class_name": "Royal-Gala",
+    "coarse_class": "Apple",
+    "category": "Fruit",
+    "description": "Royal Gala is a crispy and very juicy apple, with yellow-white pulp. The peel is thin with a red yellow speckled color."
+  },
+  {
+    "image_path": "images/Royal-Gala_004.jpg",
+    "text_path": "descriptions/Royal-Gala_004.txt",
+    "label": "grocery",
+    "class_name": "Royal-Gala",
+    "coarse_class": "Apple",
+    "category": "Fruit",
+    "description": "Royal Gala is a crispy and very juicy apple, with yellow-white pulp. The peel is thin with a red yellow speckled color."
+  },
+  {
+    "image_path": "images/Royal-Gala_005.jpg",
+    "text_path": "descriptions/Royal-Gala_005.txt",
+    "label": "grocery",
+    "class_name": "Royal-Gala",
+    "coarse_class": "Apple",
+    "category": "Fruit",
+    "description": "Royal Gala is a crispy and very juicy apple, with yellow-white pulp. The peel is thin with a red yellow speckled color."
+  },
+  {
+    "image_path": "images/Avocado_001.jpg",
+    "text_path": "descriptions/Avocado_001.txt",
+    "label": "grocery",
+    "class_name": "Avocado",
+    "coarse_class": "Avocado",
+    "category": "Fruit",
+    "description": "Avocado is a fruit with a clear core in the middle. The pulp is light yellow and the peel may vary from light green to dark green, almost black. Avocado fits for starters, salads and as an ingredient in Guacamole."
+  },
+  {
+    "image_path": "images/Avocado_002.jpg",
+    "text_path": "descriptions/Avocado_002.txt",
+    "label": "grocery",
+    "class_name": "Avocado",
+    "coarse_class": "Avocado",
+    "category": "Fruit",
+    "description": "Avocado is a fruit with a clear core in the middle. The pulp is light yellow and the peel may vary from light green to dark green, almost black. Avocado fits for starters, salads and as an ingredient in Guacamole."
+  },
+  {
+    "image_path": "images/Avocado_003.jpg",
+    "text_path": "descriptions/Avocado_003.txt",
+    "label": "grocery",
+    "class_name": "Avocado",
+    "coarse_class": "Avocado",
+    "category": "Fruit",
+    "description": "Avocado is a fruit with a clear core in the middle. The pulp is light yellow and the peel may vary from light green to dark green, almost black. Avocado fits for starters, salads and as an ingredient in Guacamole."
+  },
+  {
+    "image_path": "images/Avocado_004.jpg",
+    "text_path": "descriptions/Avocado_004.txt",
+    "label": "grocery",
+    "class_name": "Avocado",
+    "coarse_class": "Avocado",
+    "category": "Fruit",
+    "description": "Avocado is a fruit with a clear core in the middle. The pulp is light yellow and the peel may vary from light green to dark green, almost black. Avocado fits for starters, salads and as an ingredient in Guacamole."
+  },
+  {
+    "image_path": "images/Avocado_005.jpg",
+    "text_path": "descriptions/Avocado_005.txt",
+    "label": "grocery",
+    "class_name": "Avocado",
+    "coarse_class": "Avocado",
+    "category": "Fruit",
+    "description": "Avocado is a fruit with a clear core in the middle. The pulp is light yellow and the peel may vary from light green to dark green, almost black. Avocado fits for starters, salads and as an ingredient in Guacamole."
+  },
+  {
+    "image_path": "images/Banana_001.jpg",
+    "text_path": "descriptions/Banana_001.txt",
+    "label": "grocery",
+    "class_name": "Banana",
+    "coarse_class": "Banana",
+    "category": "Fruit",
+    "description": "An ecologically grown banana. Bananas are good as snacks. The banana is temperature sensitive, very sensitive to dehydration, ethylene and cold damage. Store in room temperature or cool, never in a refrigerator."
+  },
+  {
+    "image_path": "images/Banana_002.jpg",
+    "text_path": "descriptions/Banana_002.txt",
+    "label": "grocery",
+    "class_name": "Banana",
+    "coarse_class": "Banana",
+    "category": "Fruit",
+    "description": "An ecologically grown banana. Bananas are good as snacks. The banana is temperature sensitive, very sensitive to dehydration, ethylene and cold damage. Store in room temperature or cool, never in a refrigerator."
+  },
+  {
+    "image_path": "images/Banana_003.jpg",
+    "text_path": "descriptions/Banana_003.txt",
+    "label": "grocery",
+    "class_name": "Banana",
+    "coarse_class": "Banana",
+    "category": "Fruit",
+    "description": "An ecologically grown banana. Bananas are good as snacks. The banana is temperature sensitive, very sensitive to dehydration, ethylene and cold damage. Store in room temperature or cool, never in a refrigerator."
+  },
+  {
+    "image_path": "images/Banana_004.jpg",
+    "text_path": "descriptions/Banana_004.txt",
+    "label": "grocery",
+    "class_name": "Banana",
+    "coarse_class": "Banana",
+    "category": "Fruit",
+    "description": "An ecologically grown banana. Bananas are good as snacks. The banana is temperature sensitive, very sensitive to dehydration, ethylene and cold damage. Store in room temperature or cool, never in a refrigerator."
+  },
+  {
+    "image_path": "images/Banana_005.jpg",
+    "text_path": "descriptions/Banana_005.txt",
+    "label": "grocery",
+    "class_name": "Banana",
+    "coarse_class": "Banana",
+    "category": "Fruit",
+    "description": "An ecologically grown banana. Bananas are good as snacks. The banana is temperature sensitive, very sensitive to dehydration, ethylene and cold damage. Store in room temperature or cool, never in a refrigerator."
+  },
+  {
+    "image_path": "images/Banana_006.jpg",
+    "text_path": "descriptions/Banana_006.txt",
+    "label": "grocery",
+    "class_name": "Banana",
+    "coarse_class": "Banana",
+    "category": "Fruit",
+    "description": "An ecologically grown banana. Bananas are good as snacks. The banana is temperature sensitive, very sensitive to dehydration, ethylene and cold damage. Store in room temperature or cool, never in a refrigerator."
+  },
+  {
+    "image_path": "images/Kiwi_001.jpg",
+    "text_path": "descriptions/Kiwi_001.txt",
+    "label": "grocery",
+    "class_name": "Kiwi",
+    "coarse_class": "Kiwi",
+    "category": "Fruit",
+    "description": "Kiwi, or Chinese currants, as it is also called, has a sweet taste with clear acidity. The fruit is rich in vitamin C."
+  },
+  {
+    "image_path": "images/Kiwi_002.jpg",
+    "text_path": "descriptions/Kiwi_002.txt",
+    "label": "grocery",
+    "class_name": "Kiwi",
+    "coarse_class": "Kiwi",
+    "category": "Fruit",
+    "description": "Kiwi, or Chinese currants, as it is also called, has a sweet taste with clear acidity. The fruit is rich in vitamin C."
+  },
+  {
+    "image_path": "images/Kiwi_003.jpg",
+    "text_path": "descriptions/Kiwi_003.txt",
+    "label": "grocery",
+    "class_name": "Kiwi",
+    "coarse_class": "Kiwi",
+    "category": "Fruit",
+    "description": "Kiwi, or Chinese currants, as it is also called, has a sweet taste with clear acidity. The fruit is rich in vitamin C."
+  },
+  {
+    "image_path": "images/Kiwi_004.jpg",
+    "text_path": "descriptions/Kiwi_004.txt",
+    "label": "grocery",
+    "class_name": "Kiwi",
+    "coarse_class": "Kiwi",
+    "category": "Fruit",
+    "description": "Kiwi, or Chinese currants, as it is also called, has a sweet taste with clear acidity. The fruit is rich in vitamin C."
+  },
+  {
+    "image_path": "images/Kiwi_005.jpg",
+    "text_path": "descriptions/Kiwi_005.txt",
+    "label": "grocery",
+    "class_name": "Kiwi",
+    "coarse_class": "Kiwi",
+    "category": "Fruit",
+    "description": "Kiwi, or Chinese currants, as it is also called, has a sweet taste with clear acidity. The fruit is rich in vitamin C."
+  },
+  {
+    "image_path": "images/Lemon_001.jpg",
+    "text_path": "descriptions/Lemon_001.txt",
+    "label": "grocery",
+    "class_name": "Lemon",
+    "coarse_class": "Lemon",
+    "category": "Fruit",
+    "description": "Lemon is used as a flavor in food and drinks and has a very tart and sour taste."
+  },
+  {
+    "image_path": "images/Lemon_002.jpg",
+    "text_path": "descriptions/Lemon_002.txt",
+    "label": "grocery",
+    "class_name": "Lemon",
+    "coarse_class": "Lemon",
+    "category": "Fruit",
+    "description": "Lemon is used as a flavor in food and drinks and has a very tart and sour taste."
+  },
+  {
+    "image_path": "images/Lemon_003.jpg",
+    "text_path": "descriptions/Lemon_003.txt",
+    "label": "grocery",
+    "class_name": "Lemon",
+    "coarse_class": "Lemon",
+    "category": "Fruit",
+    "description": "Lemon is used as a flavor in food and drinks and has a very tart and sour taste."
+  },
+  {
+    "image_path": "images/Lemon_004.jpg",
+    "text_path": "descriptions/Lemon_004.txt",
+    "label": "grocery",
+    "class_name": "Lemon",
+    "coarse_class": "Lemon",
+    "category": "Fruit",
+    "description": "Lemon is used as a flavor in food and drinks and has a very tart and sour taste."
+  },
+  {
+    "image_path": "images/Lemon_005.jpg",
+    "text_path": "descriptions/Lemon_005.txt",
+    "label": "grocery",
+    "class_name": "Lemon",
+    "coarse_class": "Lemon",
+    "category": "Fruit",
+    "description": "Lemon is used as a flavor in food and drinks and has a very tart and sour taste."
+  },
+  {
+    "image_path": "images/Lime_001.jpg",
+    "text_path": "descriptions/Lime_001.txt",
+    "label": "grocery",
+    "class_name": "Lime",
+    "coarse_class": "Lime",
+    "category": "Fruit",
+    "description": "The lime fruit, like lemon, has sour taste, with the difference that the lime is more juicy and flavorsome than the lemon. It is mainly the juice you use but also the shell can be used."
+  },
+  {
+    "image_path": "images/Lime_002.jpg",
+    "text_path": "descriptions/Lime_002.txt",
+    "label": "grocery",
+    "class_name": "Lime",
+    "coarse_class": "Lime",
+    "category": "Fruit",
+    "description": "The lime fruit, like lemon, has sour taste, with the difference that the lime is more juicy and flavorsome than the lemon. It is mainly the juice you use but also the shell can be used."
+  },
+  {
+    "image_path": "images/Lime_003.jpg",
+    "text_path": "descriptions/Lime_003.txt",
+    "label": "grocery",
+    "class_name": "Lime",
+    "coarse_class": "Lime",
+    "category": "Fruit",
+    "description": "The lime fruit, like lemon, has sour taste, with the difference that the lime is more juicy and flavorsome than the lemon. It is mainly the juice you use but also the shell can be used."
+  },
+  {
+    "image_path": "images/Lime_004.jpg",
+    "text_path": "descriptions/Lime_004.txt",
+    "label": "grocery",
+    "class_name": "Lime",
+    "coarse_class": "Lime",
+    "category": "Fruit",
+    "description": "The lime fruit, like lemon, has sour taste, with the difference that the lime is more juicy and flavorsome than the lemon. It is mainly the juice you use but also the shell can be used."
+  },
+  {
+    "image_path": "images/Lime_005.jpg",
+    "text_path": "descriptions/Lime_005.txt",
+    "label": "grocery",
+    "class_name": "Lime",
+    "coarse_class": "Lime",
+    "category": "Fruit",
+    "description": "The lime fruit, like lemon, has sour taste, with the difference that the lime is more juicy and flavorsome than the lemon. It is mainly the juice you use but also the shell can be used."
+  },
+  {
+    "image_path": "images/Mango_001.jpg",
+    "text_path": "descriptions/Mango_001.txt",
+    "label": "grocery",
+    "class_name": "Mango",
+    "coarse_class": "Mango",
+    "category": "Fruit",
+    "description": "Mango has a fresh, powerful and sweet taste, but a special exotic shade. Inside there is a large, oval kernel in which the pulp is grown in. This makes the best way to cut mango is with the shell on. Divide the fruit by cutting along on both sides of the core. Mango can be eaten naturally or in desserts, entrees and main courses."
+  },
+  {
+    "image_path": "images/Mango_002.jpg",
+    "text_path": "descriptions/Mango_002.txt",
+    "label": "grocery",
+    "class_name": "Mango",
+    "coarse_class": "Mango",
+    "category": "Fruit",
+    "description": "Mango has a fresh, powerful and sweet taste, but a special exotic shade. Inside there is a large, oval kernel in which the pulp is grown in. This makes the best way to cut mango is with the shell on. Divide the fruit by cutting along on both sides of the core. Mango can be eaten naturally or in desserts, entrees and main courses."
+  },
+  {
+    "image_path": "images/Mango_003.jpg",
+    "text_path": "descriptions/Mango_003.txt",
+    "label": "grocery",
+    "class_name": "Mango",
+    "coarse_class": "Mango",
+    "category": "Fruit",
+    "description": "Mango has a fresh, powerful and sweet taste, but a special exotic shade. Inside there is a large, oval kernel in which the pulp is grown in. This makes the best way to cut mango is with the shell on. Divide the fruit by cutting along on both sides of the core. Mango can be eaten naturally or in desserts, entrees and main courses."
+  },
+  {
+    "image_path": "images/Cantaloupe_001.jpg",
+    "text_path": "descriptions/Cantaloupe_001.txt",
+    "label": "grocery",
+    "class_name": "Cantaloupe",
+    "coarse_class": "Melon",
+    "category": "Fruit",
+    "description": "The cantaloupe melon is a rather small and all round sugar melon, with a greenish yellow mesh patterned shell. The pulp is orange colored with juicy and sweet taste."
+  },
+  {
+    "image_path": "images/Cantaloupe_002.jpg",
+    "text_path": "descriptions/Cantaloupe_002.txt",
+    "label": "grocery",
+    "class_name": "Cantaloupe",
+    "coarse_class": "Melon",
+    "category": "Fruit",
+    "description": "The cantaloupe melon is a rather small and all round sugar melon, with a greenish yellow mesh patterned shell. The pulp is orange colored with juicy and sweet taste."
+  },
+  {
+    "image_path": "images/Cantaloupe_003.jpg",
+    "text_path": "descriptions/Cantaloupe_003.txt",
+    "label": "grocery",
+    "class_name": "Cantaloupe",
+    "coarse_class": "Melon",
+    "category": "Fruit",
+    "description": "The cantaloupe melon is a rather small and all round sugar melon, with a greenish yellow mesh patterned shell. The pulp is orange colored with juicy and sweet taste."
+  },
+  {
+    "image_path": "images/Cantaloupe_004.jpg",
+    "text_path": "descriptions/Cantaloupe_004.txt",
+    "label": "grocery",
+    "class_name": "Cantaloupe",
+    "coarse_class": "Melon",
+    "category": "Fruit",
+    "description": "The cantaloupe melon is a rather small and all round sugar melon, with a greenish yellow mesh patterned shell. The pulp is orange colored with juicy and sweet taste."
+  },
+  {
+    "image_path": "images/Cantaloupe_005.jpg",
+    "text_path": "descriptions/Cantaloupe_005.txt",
+    "label": "grocery",
+    "class_name": "Cantaloupe",
+    "coarse_class": "Melon",
+    "category": "Fruit",
+    "description": "The cantaloupe melon is a rather small and all round sugar melon, with a greenish yellow mesh patterned shell. The pulp is orange colored with juicy and sweet taste."
+  },
+  {
+    "image_path": "images/Cantaloupe_006.jpg",
+    "text_path": "descriptions/Cantaloupe_006.txt",
+    "label": "grocery",
+    "class_name": "Cantaloupe",
+    "coarse_class": "Melon",
+    "category": "Fruit",
+    "description": "The cantaloupe melon is a rather small and all round sugar melon, with a greenish yellow mesh patterned shell. The pulp is orange colored with juicy and sweet taste."
+  },
+  {
+    "image_path": "images/Galia-Melon_001.jpg",
+    "text_path": "descriptions/Galia-Melon_001.txt",
+    "label": "grocery",
+    "class_name": "Galia-Melon",
+    "coarse_class": "Melon",
+    "category": "Fruit",
+    "description": "Galia melon is a small round sugar melon with a yellowish green, orange, or light brown mesh patterned shell. The pulp is firm and juicy, with a cream white to yellowish green color and a sweet, rich flavor."
+  },
+  {
+    "image_path": "images/Galia-Melon_002.jpg",
+    "text_path": "descriptions/Galia-Melon_002.txt",
+    "label": "grocery",
+    "class_name": "Galia-Melon",
+    "coarse_class": "Melon",
+    "category": "Fruit",
+    "description": "Galia melon is a small round sugar melon with a yellowish green, orange, or light brown mesh patterned shell. The pulp is firm and juicy, with a cream white to yellowish green color and a sweet, rich flavor."
+  },
+  {
+    "image_path": "images/Galia-Melon_003.jpg",
+    "text_path": "descriptions/Galia-Melon_003.txt",
+    "label": "grocery",
+    "class_name": "Galia-Melon",
+    "coarse_class": "Melon",
+    "category": "Fruit",
+    "description": "Galia melon is a small round sugar melon with a yellowish green, orange, or light brown mesh patterned shell. The pulp is firm and juicy, with a cream white to yellowish green color and a sweet, rich flavor."
+  },
+  {
+    "image_path": "images/Galia-Melon_004.jpg",
+    "text_path": "descriptions/Galia-Melon_004.txt",
+    "label": "grocery",
+    "class_name": "Galia-Melon",
+    "coarse_class": "Melon",
+    "category": "Fruit",
+    "description": "Galia melon is a small round sugar melon with a yellowish green, orange, or light brown mesh patterned shell. The pulp is firm and juicy, with a cream white to yellowish green color and a sweet, rich flavor."
+  },
+  {
+    "image_path": "images/Galia-Melon_005.jpg",
+    "text_path": "descriptions/Galia-Melon_005.txt",
+    "label": "grocery",
+    "class_name": "Galia-Melon",
+    "coarse_class": "Melon",
+    "category": "Fruit",
+    "description": "Galia melon is a small round sugar melon with a yellowish green, orange, or light brown mesh patterned shell. The pulp is firm and juicy, with a cream white to yellowish green color and a sweet, rich flavor."
+  },
+  {
+    "image_path": "images/Honeydew-Melon_001.jpg",
+    "text_path": "descriptions/Honeydew-Melon_001.txt",
+    "label": "grocery",
+    "class_name": "Honeydew-Melon",
+    "coarse_class": "Melon",
+    "category": "Fruit",
+    "description": "Honeydew melon is an oval shaped sugarmelon, with a yellow shell. The pulp is creamy light yellow with juicy, sweet and fresh taste, which is milder than other melons."
+  },
+  {
+    "image_path": "images/Honeydew-Melon_002.jpg",
+    "text_path": "descriptions/Honeydew-Melon_002.txt",
+    "label": "grocery",
+    "class_name": "Honeydew-Melon",
+    "coarse_class": "Melon",
+    "category": "Fruit",
+    "description": "Honeydew melon is an oval shaped sugarmelon, with a yellow shell. The pulp is creamy light yellow with juicy, sweet and fresh taste, which is milder than other melons."
+  },
+  {
+    "image_path": "images/Honeydew-Melon_003.jpg",
+    "text_path": "descriptions/Honeydew-Melon_003.txt",
+    "label": "grocery",
+    "class_name": "Honeydew-Melon",
+    "coarse_class": "Melon",
+    "category": "Fruit",
+    "description": "Honeydew melon is an oval shaped sugarmelon, with a yellow shell. The pulp is creamy light yellow with juicy, sweet and fresh taste, which is milder than other melons."
+  },
+  {
+    "image_path": "images/Honeydew-Melon_004.jpg",
+    "text_path": "descriptions/Honeydew-Melon_004.txt",
+    "label": "grocery",
+    "class_name": "Honeydew-Melon",
+    "coarse_class": "Melon",
+    "category": "Fruit",
+    "description": "Honeydew melon is an oval shaped sugarmelon, with a yellow shell. The pulp is creamy light yellow with juicy, sweet and fresh taste, which is milder than other melons."
+  },
+  {
+    "image_path": "images/Watermelon_001.jpg",
+    "text_path": "descriptions/Watermelon_001.txt",
+    "label": "grocery",
+    "class_name": "Watermelon",
+    "coarse_class": "Melon",
+    "category": "Fruit",
+    "description": "Water melon juicier than sugar melons, and has a round peel with light green base color, with long-tied dark green stripes. The pulp is very juicy, mild and sweet, and occurs with and without kernels."
+  },
+  {
+    "image_path": "images/Watermelon_002.jpg",
+    "text_path": "descriptions/Watermelon_002.txt",
+    "label": "grocery",
+    "class_name": "Watermelon",
+    "coarse_class": "Melon",
+    "category": "Fruit",
+    "description": "Water melon juicier than sugar melons, and has a round peel with light green base color, with long-tied dark green stripes. The pulp is very juicy, mild and sweet, and occurs with and without kernels."
+  },
+  {
+    "image_path": "images/Watermelon_003.jpg",
+    "text_path": "descriptions/Watermelon_003.txt",
+    "label": "grocery",
+    "class_name": "Watermelon",
+    "coarse_class": "Melon",
+    "category": "Fruit",
+    "description": "Water melon juicier than sugar melons, and has a round peel with light green base color, with long-tied dark green stripes. The pulp is very juicy, mild and sweet, and occurs with and without kernels."
+  },
+  {
+    "image_path": "images/Watermelon_004.jpg",
+    "text_path": "descriptions/Watermelon_004.txt",
+    "label": "grocery",
+    "class_name": "Watermelon",
+    "coarse_class": "Melon",
+    "category": "Fruit",
+    "description": "Water melon juicier than sugar melons, and has a round peel with light green base color, with long-tied dark green stripes. The pulp is very juicy, mild and sweet, and occurs with and without kernels."
+  },
+  {
+    "image_path": "images/Watermelon_005.jpg",
+    "text_path": "descriptions/Watermelon_005.txt",
+    "label": "grocery",
+    "class_name": "Watermelon",
+    "coarse_class": "Melon",
+    "category": "Fruit",
+    "description": "Water melon juicier than sugar melons, and has a round peel with light green base color, with long-tied dark green stripes. The pulp is very juicy, mild and sweet, and occurs with and without kernels."
+  },
+  {
+    "image_path": "images/Orange_001.jpg",
+    "text_path": "descriptions/Orange_001.txt",
+    "label": "grocery",
+    "class_name": "Orange",
+    "coarse_class": "Orange",
+    "category": "Fruit",
+    "description": "There are many different types of oranges that ripen and is sold during different parts of the year. The orange is a very important vitamin C source and the vitamins are best kept if the fruit is eaten naturally."
+  },
+  {
+    "image_path": "images/Orange_002.jpg",
+    "text_path": "descriptions/Orange_002.txt",
+    "label": "grocery",
+    "class_name": "Orange",
+    "coarse_class": "Orange",
+    "category": "Fruit",
+    "description": "There are many different types of oranges that ripen and is sold during different parts of the year. The orange is a very important vitamin C source and the vitamins are best kept if the fruit is eaten naturally."
+  },
+  {
+    "image_path": "images/Orange_003.jpg",
+    "text_path": "descriptions/Orange_003.txt",
+    "label": "grocery",
+    "class_name": "Orange",
+    "coarse_class": "Orange",
+    "category": "Fruit",
+    "description": "There are many different types of oranges that ripen and is sold during different parts of the year. The orange is a very important vitamin C source and the vitamins are best kept if the fruit is eaten naturally."
+  },
+  {
+    "image_path": "images/Orange_004.jpg",
+    "text_path": "descriptions/Orange_004.txt",
+    "label": "grocery",
+    "class_name": "Orange",
+    "coarse_class": "Orange",
+    "category": "Fruit",
+    "description": "There are many different types of oranges that ripen and is sold during different parts of the year. The orange is a very important vitamin C source and the vitamins are best kept if the fruit is eaten naturally."
+  },
+  {
+    "image_path": "images/Orange_005.jpg",
+    "text_path": "descriptions/Orange_005.txt",
+    "label": "grocery",
+    "class_name": "Orange",
+    "coarse_class": "Orange",
+    "category": "Fruit",
+    "description": "There are many different types of oranges that ripen and is sold during different parts of the year. The orange is a very important vitamin C source and the vitamins are best kept if the fruit is eaten naturally."
+  },
+  {
+    "image_path": "images/Passion-Fruit_001.jpg",
+    "text_path": "descriptions/Passion-Fruit_001.txt",
+    "label": "grocery",
+    "class_name": "Passion-Fruit",
+    "coarse_class": "Passion-Fruit",
+    "category": "Fruit",
+    "description": "Passion fruit is a small, round or oval fruit with yellow or dark brownish purple dented shell. Passion fruit's interior consists of many small edible kernels surrounded by succulent pulp. The taste is rich and fresh, and reminiscent of raspberries and orange."
+  },
+  {
+    "image_path": "images/Passion-Fruit_002.jpg",
+    "text_path": "descriptions/Passion-Fruit_002.txt",
+    "label": "grocery",
+    "class_name": "Passion-Fruit",
+    "coarse_class": "Passion-Fruit",
+    "category": "Fruit",
+    "description": "Passion fruit is a small, round or oval fruit with yellow or dark brownish purple dented shell. Passion fruit's interior consists of many small edible kernels surrounded by succulent pulp. The taste is rich and fresh, and reminiscent of raspberries and orange."
+  },
+  {
+    "image_path": "images/Passion-Fruit_003.jpg",
+    "text_path": "descriptions/Passion-Fruit_003.txt",
+    "label": "grocery",
+    "class_name": "Passion-Fruit",
+    "coarse_class": "Passion-Fruit",
+    "category": "Fruit",
+    "description": "Passion fruit is a small, round or oval fruit with yellow or dark brownish purple dented shell. Passion fruit's interior consists of many small edible kernels surrounded by succulent pulp. The taste is rich and fresh, and reminiscent of raspberries and orange."
+  },
+  {
+    "image_path": "images/Passion-Fruit_004.jpg",
+    "text_path": "descriptions/Passion-Fruit_004.txt",
+    "label": "grocery",
+    "class_name": "Passion-Fruit",
+    "coarse_class": "Passion-Fruit",
+    "category": "Fruit",
+    "description": "Passion fruit is a small, round or oval fruit with yellow or dark brownish purple dented shell. Passion fruit's interior consists of many small edible kernels surrounded by succulent pulp. The taste is rich and fresh, and reminiscent of raspberries and orange."
+  },
+  {
+    "image_path": "images/Passion-Fruit_005.jpg",
+    "text_path": "descriptions/Passion-Fruit_005.txt",
+    "label": "grocery",
+    "class_name": "Passion-Fruit",
+    "coarse_class": "Passion-Fruit",
+    "category": "Fruit",
+    "description": "Passion fruit is a small, round or oval fruit with yellow or dark brownish purple dented shell. Passion fruit's interior consists of many small edible kernels surrounded by succulent pulp. The taste is rich and fresh, and reminiscent of raspberries and orange."
+  },
+  {
+    "image_path": "images/Peach_001.jpg",
+    "text_path": "descriptions/Peach_001.txt",
+    "label": "grocery",
+    "class_name": "Peach",
+    "coarse_class": "Peach",
+    "category": "Fruit",
+    "description": "Peach is a stone fruit with yellow or orange pulp and velvety shell. Suitable for eating naturally but can also be used for pastry, marmalade and jam."
+  },
+  {
+    "image_path": "images/Peach_002.jpg",
+    "text_path": "descriptions/Peach_002.txt",
+    "label": "grocery",
+    "class_name": "Peach",
+    "coarse_class": "Peach",
+    "category": "Fruit",
+    "description": "Peach is a stone fruit with yellow or orange pulp and velvety shell. Suitable for eating naturally but can also be used for pastry, marmalade and jam."
+  },
+  {
+    "image_path": "images/Peach_003.jpg",
+    "text_path": "descriptions/Peach_003.txt",
+    "label": "grocery",
+    "class_name": "Peach",
+    "coarse_class": "Peach",
+    "category": "Fruit",
+    "description": "Peach is a stone fruit with yellow or orange pulp and velvety shell. Suitable for eating naturally but can also be used for pastry, marmalade and jam."
+  },
+  {
+    "image_path": "images/Peach_004.jpg",
+    "text_path": "descriptions/Peach_004.txt",
+    "label": "grocery",
+    "class_name": "Peach",
+    "coarse_class": "Peach",
+    "category": "Fruit",
+    "description": "Peach is a stone fruit with yellow or orange pulp and velvety shell. Suitable for eating naturally but can also be used for pastry, marmalade and jam."
+  },
+  {
+    "image_path": "images/Peach_005.jpg",
+    "text_path": "descriptions/Peach_005.txt",
+    "label": "grocery",
+    "class_name": "Peach",
+    "coarse_class": "Peach",
+    "category": "Fruit",
+    "description": "Peach is a stone fruit with yellow or orange pulp and velvety shell. Suitable for eating naturally but can also be used for pastry, marmalade and jam."
+  },
+  {
+    "image_path": "images/Conference_001.jpg",
+    "text_path": "descriptions/Conference_001.txt",
+    "label": "grocery",
+    "class_name": "Conference",
+    "coarse_class": "Pear",
+    "category": "Fruit",
+    "description": "Conference is a medium sized pear with long-tapered bottle like shape and a rounded base. To the color, the Conference pear is light greenish yellow with gold brown spots. Pears taste the most when they are really ripe. Suitable for desserts, cheese tray or to eat as it is."
+  },
+  {
+    "image_path": "images/Conference_002.jpg",
+    "text_path": "descriptions/Conference_002.txt",
+    "label": "grocery",
+    "class_name": "Conference",
+    "coarse_class": "Pear",
+    "category": "Fruit",
+    "description": "Conference is a medium sized pear with long-tapered bottle like shape and a rounded base. To the color, the Conference pear is light greenish yellow with gold brown spots. Pears taste the most when they are really ripe. Suitable for desserts, cheese tray or to eat as it is."
+  },
+  {
+    "image_path": "images/Conference_003.jpg",
+    "text_path": "descriptions/Conference_003.txt",
+    "label": "grocery",
+    "class_name": "Conference",
+    "coarse_class": "Pear",
+    "category": "Fruit",
+    "description": "Conference is a medium sized pear with long-tapered bottle like shape and a rounded base. To the color, the Conference pear is light greenish yellow with gold brown spots. Pears taste the most when they are really ripe. Suitable for desserts, cheese tray or to eat as it is."
+  },
+  {
+    "image_path": "images/Conference_004.jpg",
+    "text_path": "descriptions/Conference_004.txt",
+    "label": "grocery",
+    "class_name": "Conference",
+    "coarse_class": "Pear",
+    "category": "Fruit",
+    "description": "Conference is a medium sized pear with long-tapered bottle like shape and a rounded base. To the color, the Conference pear is light greenish yellow with gold brown spots. Pears taste the most when they are really ripe. Suitable for desserts, cheese tray or to eat as it is."
+  },
+  {
+    "image_path": "images/Conference_005.jpg",
+    "text_path": "descriptions/Conference_005.txt",
+    "label": "grocery",
+    "class_name": "Conference",
+    "coarse_class": "Pear",
+    "category": "Fruit",
+    "description": "Conference is a medium sized pear with long-tapered bottle like shape and a rounded base. To the color, the Conference pear is light greenish yellow with gold brown spots. Pears taste the most when they are really ripe. Suitable for desserts, cheese tray or to eat as it is."
+  },
+  {
+    "image_path": "images/Pineapple_001.jpg",
+    "text_path": "descriptions/Pineapple_001.txt",
+    "label": "grocery",
+    "class_name": "Pineapple",
+    "coarse_class": "Pineapple",
+    "category": "Fruit",
+    "description": "Pineapple fits well to be eaten naturally in for example desserts and fruit salad. Remember to remove the log in the middle."
+  },
+  {
+    "image_path": "images/Pineapple_002.jpg",
+    "text_path": "descriptions/Pineapple_002.txt",
+    "label": "grocery",
+    "class_name": "Pineapple",
+    "coarse_class": "Pineapple",
+    "category": "Fruit",
+    "description": "Pineapple fits well to be eaten naturally in for example desserts and fruit salad. Remember to remove the log in the middle."
+  },
+  {
+    "image_path": "images/Pineapple_003.jpg",
+    "text_path": "descriptions/Pineapple_003.txt",
+    "label": "grocery",
+    "class_name": "Pineapple",
+    "coarse_class": "Pineapple",
+    "category": "Fruit",
+    "description": "Pineapple fits well to be eaten naturally in for example desserts and fruit salad. Remember to remove the log in the middle."
+  },
+  {
+    "image_path": "images/Pineapple_004.jpg",
+    "text_path": "descriptions/Pineapple_004.txt",
+    "label": "grocery",
+    "class_name": "Pineapple",
+    "coarse_class": "Pineapple",
+    "category": "Fruit",
+    "description": "Pineapple fits well to be eaten naturally in for example desserts and fruit salad. Remember to remove the log in the middle."
+  },
+  {
+    "image_path": "images/Pineapple_005.jpg",
+    "text_path": "descriptions/Pineapple_005.txt",
+    "label": "grocery",
+    "class_name": "Pineapple",
+    "coarse_class": "Pineapple",
+    "category": "Fruit",
+    "description": "Pineapple fits well to be eaten naturally in for example desserts and fruit salad. Remember to remove the log in the middle."
+  },
+  {
+    "image_path": "images/Pomegranate_001.jpg",
+    "text_path": "descriptions/Pomegranate_001.txt",
+    "label": "grocery",
+    "class_name": "Pomegranate",
+    "coarse_class": "Pomegranate",
+    "category": "Fruit",
+    "description": "Pomegranate has a sweet, gentle and refreshing taste, making pomegranate suitable for salads and desserts. It is only the kernels of the fruit that you eat. These are taken out by first cutting around the apple without destroying the core. Then turn both halves in opposite directions until they loosen. Finally, the kernels are loosened by knocking a wooden slab on the shell of the half, preferably over a bowl."
+  },
+  {
+    "image_path": "images/Pomegranate_002.jpg",
+    "text_path": "descriptions/Pomegranate_002.txt",
+    "label": "grocery",
+    "class_name": "Pomegranate",
+    "coarse_class": "Pomegranate",
+    "category": "Fruit",
+    "description": "Pomegranate has a sweet, gentle and refreshing taste, making pomegranate suitable for salads and desserts. It is only the kernels of the fruit that you eat. These are taken out by first cutting around the apple without destroying the core. Then turn both halves in opposite directions until they loosen. Finally, the kernels are loosened by knocking a wooden slab on the shell of the half, preferably over a bowl."
+  },
+  {
+    "image_path": "images/Pomegranate_003.jpg",
+    "text_path": "descriptions/Pomegranate_003.txt",
+    "label": "grocery",
+    "class_name": "Pomegranate",
+    "coarse_class": "Pomegranate",
+    "category": "Fruit",
+    "description": "Pomegranate has a sweet, gentle and refreshing taste, making pomegranate suitable for salads and desserts. It is only the kernels of the fruit that you eat. These are taken out by first cutting around the apple without destroying the core. Then turn both halves in opposite directions until they loosen. Finally, the kernels are loosened by knocking a wooden slab on the shell of the half, preferably over a bowl."
+  },
+  {
+    "image_path": "images/Pomegranate_004.jpg",
+    "text_path": "descriptions/Pomegranate_004.txt",
+    "label": "grocery",
+    "class_name": "Pomegranate",
+    "coarse_class": "Pomegranate",
+    "category": "Fruit",
+    "description": "Pomegranate has a sweet, gentle and refreshing taste, making pomegranate suitable for salads and desserts. It is only the kernels of the fruit that you eat. These are taken out by first cutting around the apple without destroying the core. Then turn both halves in opposite directions until they loosen. Finally, the kernels are loosened by knocking a wooden slab on the shell of the half, preferably over a bowl."
+  },
+  {
+    "image_path": "images/Pomegranate_005.jpg",
+    "text_path": "descriptions/Pomegranate_005.txt",
+    "label": "grocery",
+    "class_name": "Pomegranate",
+    "coarse_class": "Pomegranate",
+    "category": "Fruit",
+    "description": "Pomegranate has a sweet, gentle and refreshing taste, making pomegranate suitable for salads and desserts. It is only the kernels of the fruit that you eat. These are taken out by first cutting around the apple without destroying the core. Then turn both halves in opposite directions until they loosen. Finally, the kernels are loosened by knocking a wooden slab on the shell of the half, preferably over a bowl."
+  },
+  {
+    "image_path": "images/Red-Grapefruit_001.jpg",
+    "text_path": "descriptions/Red-Grapefruit_001.txt",
+    "label": "grocery",
+    "class_name": "Red-Grapefruit",
+    "coarse_class": "Red-Grapefruit",
+    "category": "Fruit",
+    "description": "The red grapefruit has a red pulp and a slightly pink colored peel. The taste is characteristically bitter, but at the same time fresh and sour. The red grapefruit is sweeter than the blonde grapefruit."
+  },
+  {
+    "image_path": "images/Red-Grapefruit_002.jpg",
+    "text_path": "descriptions/Red-Grapefruit_002.txt",
+    "label": "grocery",
+    "class_name": "Red-Grapefruit",
+    "coarse_class": "Red-Grapefruit",
+    "category": "Fruit",
+    "description": "The red grapefruit has a red pulp and a slightly pink colored peel. The taste is characteristically bitter, but at the same time fresh and sour. The red grapefruit is sweeter than the blonde grapefruit."
+  },
+  {
+    "image_path": "images/Red-Grapefruit_003.jpg",
+    "text_path": "descriptions/Red-Grapefruit_003.txt",
+    "label": "grocery",
+    "class_name": "Red-Grapefruit",
+    "coarse_class": "Red-Grapefruit",
+    "category": "Fruit",
+    "description": "The red grapefruit has a red pulp and a slightly pink colored peel. The taste is characteristically bitter, but at the same time fresh and sour. The red grapefruit is sweeter than the blonde grapefruit."
+  },
+  {
+    "image_path": "images/Red-Grapefruit_004.jpg",
+    "text_path": "descriptions/Red-Grapefruit_004.txt",
+    "label": "grocery",
+    "class_name": "Red-Grapefruit",
+    "coarse_class": "Red-Grapefruit",
+    "category": "Fruit",
+    "description": "The red grapefruit has a red pulp and a slightly pink colored peel. The taste is characteristically bitter, but at the same time fresh and sour. The red grapefruit is sweeter than the blonde grapefruit."
+  },
+  {
+    "image_path": "images/Red-Grapefruit_005.jpg",
+    "text_path": "descriptions/Red-Grapefruit_005.txt",
+    "label": "grocery",
+    "class_name": "Red-Grapefruit",
+    "coarse_class": "Red-Grapefruit",
+    "category": "Fruit",
+    "description": "The red grapefruit has a red pulp and a slightly pink colored peel. The taste is characteristically bitter, but at the same time fresh and sour. The red grapefruit is sweeter than the blonde grapefruit."
+  },
+  {
+    "image_path": "images/Satsumas_001.jpg",
+    "text_path": "descriptions/Satsumas_001.txt",
+    "label": "grocery",
+    "class_name": "Satsumas",
+    "coarse_class": "Satsumas",
+    "category": "Fruit",
+    "description": "Satsumas is a sweet and small type of citrus fruit. The fruit is popular as a snack."
+  },
+  {
+    "image_path": "images/Satsumas_002.jpg",
+    "text_path": "descriptions/Satsumas_002.txt",
+    "label": "grocery",
+    "class_name": "Satsumas",
+    "coarse_class": "Satsumas",
+    "category": "Fruit",
+    "description": "Satsumas is a sweet and small type of citrus fruit. The fruit is popular as a snack."
+  },
+  {
+    "image_path": "images/Satsumas_003.jpg",
+    "text_path": "descriptions/Satsumas_003.txt",
+    "label": "grocery",
+    "class_name": "Satsumas",
+    "coarse_class": "Satsumas",
+    "category": "Fruit",
+    "description": "Satsumas is a sweet and small type of citrus fruit. The fruit is popular as a snack."
+  },
+  {
+    "image_path": "images/Satsumas_004.jpg",
+    "text_path": "descriptions/Satsumas_004.txt",
+    "label": "grocery",
+    "class_name": "Satsumas",
+    "coarse_class": "Satsumas",
+    "category": "Fruit",
+    "description": "Satsumas is a sweet and small type of citrus fruit. The fruit is popular as a snack."
+  },
+  {
+    "image_path": "images/Satsumas_005.jpg",
+    "text_path": "descriptions/Satsumas_005.txt",
+    "label": "grocery",
+    "class_name": "Satsumas",
+    "coarse_class": "Satsumas",
+    "category": "Fruit",
+    "description": "Satsumas is a sweet and small type of citrus fruit. The fruit is popular as a snack."
+  },
+  {
+    "image_path": "images/Bravo-Apple-Juice_001.jpg",
+    "text_path": "descriptions/Bravo-Apple-Juice_001.txt",
+    "label": "liquid",
+    "class_name": "Bravo-Apple-Juice",
+    "coarse_class": "Juice",
+    "category": "Packages",
+    "description": "Ready to drink apple juice from concentrate. Fresh and sour taste. Fits the breakfast table, as quencher and meal drink."
+  },
+  {
+    "image_path": "images/Bravo-Apple-Juice_002.jpg",
+    "text_path": "descriptions/Bravo-Apple-Juice_002.txt",
+    "label": "liquid",
+    "class_name": "Bravo-Apple-Juice",
+    "coarse_class": "Juice",
+    "category": "Packages",
+    "description": "Ready to drink apple juice from concentrate. Fresh and sour taste. Fits the breakfast table, as quencher and meal drink."
+  },
+  {
+    "image_path": "images/Bravo-Apple-Juice_003.jpg",
+    "text_path": "descriptions/Bravo-Apple-Juice_003.txt",
+    "label": "liquid",
+    "class_name": "Bravo-Apple-Juice",
+    "coarse_class": "Juice",
+    "category": "Packages",
+    "description": "Ready to drink apple juice from concentrate. Fresh and sour taste. Fits the breakfast table, as quencher and meal drink."
+  },
+  {
+    "image_path": "images/Bravo-Apple-Juice_004.jpg",
+    "text_path": "descriptions/Bravo-Apple-Juice_004.txt",
+    "label": "liquid",
+    "class_name": "Bravo-Apple-Juice",
+    "coarse_class": "Juice",
+    "category": "Packages",
+    "description": "Ready to drink apple juice from concentrate. Fresh and sour taste. Fits the breakfast table, as quencher and meal drink."
+  },
+  {
+    "image_path": "images/Bravo-Orange-Juice_001.jpg",
+    "text_path": "descriptions/Bravo-Orange-Juice_001.txt",
+    "label": "liquid",
+    "class_name": "Bravo-Orange-Juice",
+    "coarse_class": "Juice",
+    "category": "Packages",
+    "description": "Ready to drink orange juice from concentrate. Fresh and sour taste. Fits the breakfast table, as quencher and meal drink. Without pulp."
+  },
+  {
+    "image_path": "images/Bravo-Orange-Juice_002.jpg",
+    "text_path": "descriptions/Bravo-Orange-Juice_002.txt",
+    "label": "liquid",
+    "class_name": "Bravo-Orange-Juice",
+    "coarse_class": "Juice",
+    "category": "Packages",
+    "description": "Ready to drink orange juice from concentrate. Fresh and sour taste. Fits the breakfast table, as quencher and meal drink. Without pulp."
+  },
+  {
+    "image_path": "images/Bravo-Orange-Juice_003.jpg",
+    "text_path": "descriptions/Bravo-Orange-Juice_003.txt",
+    "label": "liquid",
+    "class_name": "Bravo-Orange-Juice",
+    "coarse_class": "Juice",
+    "category": "Packages",
+    "description": "Ready to drink orange juice from concentrate. Fresh and sour taste. Fits the breakfast table, as quencher and meal drink. Without pulp."
+  },
+  {
+    "image_path": "images/Bravo-Orange-Juice_004.jpg",
+    "text_path": "descriptions/Bravo-Orange-Juice_004.txt",
+    "label": "liquid",
+    "class_name": "Bravo-Orange-Juice",
+    "coarse_class": "Juice",
+    "category": "Packages",
+    "description": "Ready to drink orange juice from concentrate. Fresh and sour taste. Fits the breakfast table, as quencher and meal drink. Without pulp."
+  },
+  {
+    "image_path": "images/Bravo-Orange-Juice_005.jpg",
+    "text_path": "descriptions/Bravo-Orange-Juice_005.txt",
+    "label": "liquid",
+    "class_name": "Bravo-Orange-Juice",
+    "coarse_class": "Juice",
+    "category": "Packages",
+    "description": "Ready to drink orange juice from concentrate. Fresh and sour taste. Fits the breakfast table, as quencher and meal drink. Without pulp."
+  },
+  {
+    "image_path": "images/God-Morgon-Apple-Juice_001.jpg",
+    "text_path": "descriptions/God-Morgon-Apple-Juice_001.txt",
+    "label": "liquid",
+    "class_name": "God-Morgon-Apple-Juice",
+    "coarse_class": "Juice",
+    "category": "Packages",
+    "description": "God Morning Apple is unfiltered, which gives a richer, more delicious juice with real apple flavor."
+  },
+  {
+    "image_path": "images/God-Morgon-Apple-Juice_002.jpg",
+    "text_path": "descriptions/God-Morgon-Apple-Juice_002.txt",
+    "label": "liquid",
+    "class_name": "God-Morgon-Apple-Juice",
+    "coarse_class": "Juice",
+    "category": "Packages",
+    "description": "God Morning Apple is unfiltered, which gives a richer, more delicious juice with real apple flavor."
+  },
+  {
+    "image_path": "images/God-Morgon-Apple-Juice_003.jpg",
+    "text_path": "descriptions/God-Morgon-Apple-Juice_003.txt",
+    "label": "liquid",
+    "class_name": "God-Morgon-Apple-Juice",
+    "coarse_class": "Juice",
+    "category": "Packages",
+    "description": "God Morning Apple is unfiltered, which gives a richer, more delicious juice with real apple flavor."
+  },
+  {
+    "image_path": "images/God-Morgon-Apple-Juice_004.jpg",
+    "text_path": "descriptions/God-Morgon-Apple-Juice_004.txt",
+    "label": "liquid",
+    "class_name": "God-Morgon-Apple-Juice",
+    "coarse_class": "Juice",
+    "category": "Packages",
+    "description": "God Morning Apple is unfiltered, which gives a richer, more delicious juice with real apple flavor."
+  },
+  {
+    "image_path": "images/God-Morgon-Apple-Juice_005.jpg",
+    "text_path": "descriptions/God-Morgon-Apple-Juice_005.txt",
+    "label": "liquid",
+    "class_name": "God-Morgon-Apple-Juice",
+    "coarse_class": "Juice",
+    "category": "Packages",
+    "description": "God Morning Apple is unfiltered, which gives a richer, more delicious juice with real apple flavor."
+  },
+  {
+    "image_path": "images/God-Morgon-Orange-Juice_001.jpg",
+    "text_path": "descriptions/God-Morgon-Orange-Juice_001.txt",
+    "label": "liquid",
+    "class_name": "God-Morgon-Orange-Juice",
+    "coarse_class": "Juice",
+    "category": "Packages",
+    "description": "God Morgon Orange is pressed by sun-dried, hand-picked oranges. The package contains juice from 2 kilograms of oranges!"
+  },
+  {
+    "image_path": "images/God-Morgon-Orange-Juice_002.jpg",
+    "text_path": "descriptions/God-Morgon-Orange-Juice_002.txt",
+    "label": "liquid",
+    "class_name": "God-Morgon-Orange-Juice",
+    "coarse_class": "Juice",
+    "category": "Packages",
+    "description": "God Morgon Orange is pressed by sun-dried, hand-picked oranges. The package contains juice from 2 kilograms of oranges!"
+  },
+  {
+    "image_path": "images/God-Morgon-Orange-Juice_003.jpg",
+    "text_path": "descriptions/God-Morgon-Orange-Juice_003.txt",
+    "label": "liquid",
+    "class_name": "God-Morgon-Orange-Juice",
+    "coarse_class": "Juice",
+    "category": "Packages",
+    "description": "God Morgon Orange is pressed by sun-dried, hand-picked oranges. The package contains juice from 2 kilograms of oranges!"
+  },
+  {
+    "image_path": "images/God-Morgon-Orange-Juice_004.jpg",
+    "text_path": "descriptions/God-Morgon-Orange-Juice_004.txt",
+    "label": "liquid",
+    "class_name": "God-Morgon-Orange-Juice",
+    "coarse_class": "Juice",
+    "category": "Packages",
+    "description": "God Morgon Orange is pressed by sun-dried, hand-picked oranges. The package contains juice from 2 kilograms of oranges!"
+  },
+  {
+    "image_path": "images/God-Morgon-Orange-Juice_005.jpg",
+    "text_path": "descriptions/God-Morgon-Orange-Juice_005.txt",
+    "label": "liquid",
+    "class_name": "God-Morgon-Orange-Juice",
+    "coarse_class": "Juice",
+    "category": "Packages",
+    "description": "God Morgon Orange is pressed by sun-dried, hand-picked oranges. The package contains juice from 2 kilograms of oranges!"
+  },
+  {
+    "image_path": "images/God-Morgon-Orange-Red-Grapefruit-Juice_001.jpg",
+    "text_path": "descriptions/God-Morgon-Orange-Red-Grapefruit-Juice_001.txt",
+    "label": "liquid",
+    "class_name": "God-Morgon-Orange-Red-Grapefruit-Juice",
+    "coarse_class": "Juice",
+    "category": "Packages",
+    "description": "God Morning Orange / Red Grapefruit is a fresh blend of sweet orange juice and tasty fresh red grapefruit."
+  },
+  {
+    "image_path": "images/God-Morgon-Orange-Red-Grapefruit-Juice_002.jpg",
+    "text_path": "descriptions/God-Morgon-Orange-Red-Grapefruit-Juice_002.txt",
+    "label": "liquid",
+    "class_name": "God-Morgon-Orange-Red-Grapefruit-Juice",
+    "coarse_class": "Juice",
+    "category": "Packages",
+    "description": "God Morning Orange / Red Grapefruit is a fresh blend of sweet orange juice and tasty fresh red grapefruit."
+  },
+  {
+    "image_path": "images/God-Morgon-Orange-Red-Grapefruit-Juice_003.jpg",
+    "text_path": "descriptions/God-Morgon-Orange-Red-Grapefruit-Juice_003.txt",
+    "label": "liquid",
+    "class_name": "God-Morgon-Orange-Red-Grapefruit-Juice",
+    "coarse_class": "Juice",
+    "category": "Packages",
+    "description": "God Morning Orange / Red Grapefruit is a fresh blend of sweet orange juice and tasty fresh red grapefruit."
+  },
+  {
+    "image_path": "images/God-Morgon-Orange-Red-Grapefruit-Juice_004.jpg",
+    "text_path": "descriptions/God-Morgon-Orange-Red-Grapefruit-Juice_004.txt",
+    "label": "liquid",
+    "class_name": "God-Morgon-Orange-Red-Grapefruit-Juice",
+    "coarse_class": "Juice",
+    "category": "Packages",
+    "description": "God Morning Orange / Red Grapefruit is a fresh blend of sweet orange juice and tasty fresh red grapefruit."
+  },
+  {
+    "image_path": "images/God-Morgon-Orange-Red-Grapefruit-Juice_005.jpg",
+    "text_path": "descriptions/God-Morgon-Orange-Red-Grapefruit-Juice_005.txt",
+    "label": "liquid",
+    "class_name": "God-Morgon-Orange-Red-Grapefruit-Juice",
+    "coarse_class": "Juice",
+    "category": "Packages",
+    "description": "God Morning Orange / Red Grapefruit is a fresh blend of sweet orange juice and tasty fresh red grapefruit."
+  },
+  {
+    "image_path": "images/God-Morgon-Orange-Red-Grapefruit-Juice_006.jpg",
+    "text_path": "descriptions/God-Morgon-Orange-Red-Grapefruit-Juice_006.txt",
+    "label": "liquid",
+    "class_name": "God-Morgon-Orange-Red-Grapefruit-Juice",
+    "coarse_class": "Juice",
+    "category": "Packages",
+    "description": "God Morning Orange / Red Grapefruit is a fresh blend of sweet orange juice and tasty fresh red grapefruit."
+  },
+  {
+    "image_path": "images/God-Morgon-Red-Grapefruit-Juice_001.jpg",
+    "text_path": "descriptions/God-Morgon-Red-Grapefruit-Juice_001.txt",
+    "label": "liquid",
+    "class_name": "God-Morgon-Red-Grapefruit-Juice",
+    "coarse_class": "Juice",
+    "category": "Packages",
+    "description": "God Morning Red Grapefruit is a real vitamin kick - mellow, rich in taste and as refreshing as only red grapefruit can be."
+  },
+  {
+    "image_path": "images/God-Morgon-Red-Grapefruit-Juice_002.jpg",
+    "text_path": "descriptions/God-Morgon-Red-Grapefruit-Juice_002.txt",
+    "label": "liquid",
+    "class_name": "God-Morgon-Red-Grapefruit-Juice",
+    "coarse_class": "Juice",
+    "category": "Packages",
+    "description": "God Morning Red Grapefruit is a real vitamin kick - mellow, rich in taste and as refreshing as only red grapefruit can be."
+  },
+  {
+    "image_path": "images/God-Morgon-Red-Grapefruit-Juice_003.jpg",
+    "text_path": "descriptions/God-Morgon-Red-Grapefruit-Juice_003.txt",
+    "label": "liquid",
+    "class_name": "God-Morgon-Red-Grapefruit-Juice",
+    "coarse_class": "Juice",
+    "category": "Packages",
+    "description": "God Morning Red Grapefruit is a real vitamin kick - mellow, rich in taste and as refreshing as only red grapefruit can be."
+  },
+  {
+    "image_path": "images/God-Morgon-Red-Grapefruit-Juice_004.jpg",
+    "text_path": "descriptions/God-Morgon-Red-Grapefruit-Juice_004.txt",
+    "label": "liquid",
+    "class_name": "God-Morgon-Red-Grapefruit-Juice",
+    "coarse_class": "Juice",
+    "category": "Packages",
+    "description": "God Morning Red Grapefruit is a real vitamin kick - mellow, rich in taste and as refreshing as only red grapefruit can be."
+  },
+  {
+    "image_path": "images/Arla-Ecological-Medium-Fat-Milk_001.jpg",
+    "text_path": "descriptions/Arla-Ecological-Medium-Fat-Milk_001.txt",
+    "label": "liquid",
+    "class_name": "Arla-Ecological-Medium-Fat-Milk",
+    "coarse_class": "Milk",
+    "category": "Packages",
+    "description": "Fresh skimmed Milk made from Swedish Milk from organic Arlag\u00e5rdar. Skimmed milk has a delicious full flavor and is a popular choice for breakfast cereals, porridge or as a drink for the meal. Milk is a natural source of, for example, protein, calcium and vitamin B12. Protein contributes to muscle building and calcium is needed to maintain a normal bone structure. The brand Arla Ko guarantees that the product is made of 100% Swedish milk. The new brown carton has 24 percent lower climate impact compared to the previous white carton."
+  },
+  {
+    "image_path": "images/Arla-Ecological-Medium-Fat-Milk_002.jpg",
+    "text_path": "descriptions/Arla-Ecological-Medium-Fat-Milk_002.txt",
+    "label": "liquid",
+    "class_name": "Arla-Ecological-Medium-Fat-Milk",
+    "coarse_class": "Milk",
+    "category": "Packages",
+    "description": "Fresh skimmed Milk made from Swedish Milk from organic Arlag\u00e5rdar. Skimmed milk has a delicious full flavor and is a popular choice for breakfast cereals, porridge or as a drink for the meal. Milk is a natural source of, for example, protein, calcium and vitamin B12. Protein contributes to muscle building and calcium is needed to maintain a normal bone structure. The brand Arla Ko guarantees that the product is made of 100% Swedish milk. The new brown carton has 24 percent lower climate impact compared to the previous white carton."
+  },
+  {
+    "image_path": "images/Arla-Ecological-Medium-Fat-Milk_003.jpg",
+    "text_path": "descriptions/Arla-Ecological-Medium-Fat-Milk_003.txt",
+    "label": "liquid",
+    "class_name": "Arla-Ecological-Medium-Fat-Milk",
+    "coarse_class": "Milk",
+    "category": "Packages",
+    "description": "Fresh skimmed Milk made from Swedish Milk from organic Arlag\u00e5rdar. Skimmed milk has a delicious full flavor and is a popular choice for breakfast cereals, porridge or as a drink for the meal. Milk is a natural source of, for example, protein, calcium and vitamin B12. Protein contributes to muscle building and calcium is needed to maintain a normal bone structure. The brand Arla Ko guarantees that the product is made of 100% Swedish milk. The new brown carton has 24 percent lower climate impact compared to the previous white carton."
+  },
+  {
+    "image_path": "images/Arla-Ecological-Medium-Fat-Milk_004.jpg",
+    "text_path": "descriptions/Arla-Ecological-Medium-Fat-Milk_004.txt",
+    "label": "liquid",
+    "class_name": "Arla-Ecological-Medium-Fat-Milk",
+    "coarse_class": "Milk",
+    "category": "Packages",
+    "description": "Fresh skimmed Milk made from Swedish Milk from organic Arlag\u00e5rdar. Skimmed milk has a delicious full flavor and is a popular choice for breakfast cereals, porridge or as a drink for the meal. Milk is a natural source of, for example, protein, calcium and vitamin B12. Protein contributes to muscle building and calcium is needed to maintain a normal bone structure. The brand Arla Ko guarantees that the product is made of 100% Swedish milk. The new brown carton has 24 percent lower climate impact compared to the previous white carton."
+  },
+  {
+    "image_path": "images/Arla-Ecological-Medium-Fat-Milk_005.jpg",
+    "text_path": "descriptions/Arla-Ecological-Medium-Fat-Milk_005.txt",
+    "label": "liquid",
+    "class_name": "Arla-Ecological-Medium-Fat-Milk",
+    "coarse_class": "Milk",
+    "category": "Packages",
+    "description": "Fresh skimmed Milk made from Swedish Milk from organic Arlag\u00e5rdar. Skimmed milk has a delicious full flavor and is a popular choice for breakfast cereals, porridge or as a drink for the meal. Milk is a natural source of, for example, protein, calcium and vitamin B12. Protein contributes to muscle building and calcium is needed to maintain a normal bone structure. The brand Arla Ko guarantees that the product is made of 100% Swedish milk. The new brown carton has 24 percent lower climate impact compared to the previous white carton."
+  },
+  {
+    "image_path": "images/Arla-Medium-Fat-Milk_001.jpg",
+    "text_path": "descriptions/Arla-Medium-Fat-Milk_001.txt",
+    "label": "liquid",
+    "class_name": "Arla-Medium-Fat-Milk",
+    "coarse_class": "Milk",
+    "category": "Packages",
+    "description": "Fresh skimmed milk made from Swedish milk from Arlag\u00e5rdar. Skimmed milk has a delicious full-bodied milk flavor and is a popular choice for breakfast cereals, porridge or as a drink for the meal. Milk is a natural source of, for example, protein, calcium and vitamin B12. Protein contributes to muscle building and calcium is needed to maintain a normal bone structure. The brand Arla Ko guarantees that the product is made of 100% Swedish milk."
+  },
+  {
+    "image_path": "images/Arla-Medium-Fat-Milk_002.jpg",
+    "text_path": "descriptions/Arla-Medium-Fat-Milk_002.txt",
+    "label": "liquid",
+    "class_name": "Arla-Medium-Fat-Milk",
+    "coarse_class": "Milk",
+    "category": "Packages",
+    "description": "Fresh skimmed milk made from Swedish milk from Arlag\u00e5rdar. Skimmed milk has a delicious full-bodied milk flavor and is a popular choice for breakfast cereals, porridge or as a drink for the meal. Milk is a natural source of, for example, protein, calcium and vitamin B12. Protein contributes to muscle building and calcium is needed to maintain a normal bone structure. The brand Arla Ko guarantees that the product is made of 100% Swedish milk."
+  },
+  {
+    "image_path": "images/Arla-Medium-Fat-Milk_003.jpg",
+    "text_path": "descriptions/Arla-Medium-Fat-Milk_003.txt",
+    "label": "liquid",
+    "class_name": "Arla-Medium-Fat-Milk",
+    "coarse_class": "Milk",
+    "category": "Packages",
+    "description": "Fresh skimmed milk made from Swedish milk from Arlag\u00e5rdar. Skimmed milk has a delicious full-bodied milk flavor and is a popular choice for breakfast cereals, porridge or as a drink for the meal. Milk is a natural source of, for example, protein, calcium and vitamin B12. Protein contributes to muscle building and calcium is needed to maintain a normal bone structure. The brand Arla Ko guarantees that the product is made of 100% Swedish milk."
+  },
+  {
+    "image_path": "images/Arla-Medium-Fat-Milk_004.jpg",
+    "text_path": "descriptions/Arla-Medium-Fat-Milk_004.txt",
+    "label": "liquid",
+    "class_name": "Arla-Medium-Fat-Milk",
+    "coarse_class": "Milk",
+    "category": "Packages",
+    "description": "Fresh skimmed milk made from Swedish milk from Arlag\u00e5rdar. Skimmed milk has a delicious full-bodied milk flavor and is a popular choice for breakfast cereals, porridge or as a drink for the meal. Milk is a natural source of, for example, protein, calcium and vitamin B12. Protein contributes to muscle building and calcium is needed to maintain a normal bone structure. The brand Arla Ko guarantees that the product is made of 100% Swedish milk."
+  },
+  {
+    "image_path": "images/Arla-Standard-Milk_001.jpg",
+    "text_path": "descriptions/Arla-Standard-Milk_001.txt",
+    "label": "liquid",
+    "class_name": "Arla-Standard-Milk",
+    "coarse_class": "Milk",
+    "category": "Packages",
+    "description": "Fresh standard milk made from Swedish milk from Arlag\u00e5rdar. The taste is round and full of clear flavors of cream. This makes it extra good for coffee, tea and chocolate. Standard milk can also be used for cooking, berries and porridge. Milk is a natural source of, for example, protein, calcium and vitamin B12. Protein contributes to muscle building and calcium is needed to maintain a normal bone structure. The brand Arla Ko guarantees that the product is made of 100 percent Swedish milk."
+  },
+  {
+    "image_path": "images/Arla-Standard-Milk_002.jpg",
+    "text_path": "descriptions/Arla-Standard-Milk_002.txt",
+    "label": "liquid",
+    "class_name": "Arla-Standard-Milk",
+    "coarse_class": "Milk",
+    "category": "Packages",
+    "description": "Fresh standard milk made from Swedish milk from Arlag\u00e5rdar. The taste is round and full of clear flavors of cream. This makes it extra good for coffee, tea and chocolate. Standard milk can also be used for cooking, berries and porridge. Milk is a natural source of, for example, protein, calcium and vitamin B12. Protein contributes to muscle building and calcium is needed to maintain a normal bone structure. The brand Arla Ko guarantees that the product is made of 100 percent Swedish milk."
+  },
+  {
+    "image_path": "images/Arla-Standard-Milk_003.jpg",
+    "text_path": "descriptions/Arla-Standard-Milk_003.txt",
+    "label": "liquid",
+    "class_name": "Arla-Standard-Milk",
+    "coarse_class": "Milk",
+    "category": "Packages",
+    "description": "Fresh standard milk made from Swedish milk from Arlag\u00e5rdar. The taste is round and full of clear flavors of cream. This makes it extra good for coffee, tea and chocolate. Standard milk can also be used for cooking, berries and porridge. Milk is a natural source of, for example, protein, calcium and vitamin B12. Protein contributes to muscle building and calcium is needed to maintain a normal bone structure. The brand Arla Ko guarantees that the product is made of 100 percent Swedish milk."
+  },
+  {
+    "image_path": "images/Arla-Standard-Milk_004.jpg",
+    "text_path": "descriptions/Arla-Standard-Milk_004.txt",
+    "label": "liquid",
+    "class_name": "Arla-Standard-Milk",
+    "coarse_class": "Milk",
+    "category": "Packages",
+    "description": "Fresh standard milk made from Swedish milk from Arlag\u00e5rdar. The taste is round and full of clear flavors of cream. This makes it extra good for coffee, tea and chocolate. Standard milk can also be used for cooking, berries and porridge. Milk is a natural source of, for example, protein, calcium and vitamin B12. Protein contributes to muscle building and calcium is needed to maintain a normal bone structure. The brand Arla Ko guarantees that the product is made of 100 percent Swedish milk."
+  },
+  {
+    "image_path": "images/Arla-Standard-Milk_005.jpg",
+    "text_path": "descriptions/Arla-Standard-Milk_005.txt",
+    "label": "liquid",
+    "class_name": "Arla-Standard-Milk",
+    "coarse_class": "Milk",
+    "category": "Packages",
+    "description": "Fresh standard milk made from Swedish milk from Arlag\u00e5rdar. The taste is round and full of clear flavors of cream. This makes it extra good for coffee, tea and chocolate. Standard milk can also be used for cooking, berries and porridge. Milk is a natural source of, for example, protein, calcium and vitamin B12. Protein contributes to muscle building and calcium is needed to maintain a normal bone structure. The brand Arla Ko guarantees that the product is made of 100 percent Swedish milk."
+  },
+  {
+    "image_path": "images/Garant-Ecological-Medium-Fat-Milk_001.jpg",
+    "text_path": "descriptions/Garant-Ecological-Medium-Fat-Milk_001.txt",
+    "label": "liquid",
+    "class_name": "Garant-Ecological-Medium-Fat-Milk",
+    "coarse_class": "Milk",
+    "category": "Packages",
+    "description": "Organic skimmed milk from our Swedish KRAV farms. 1.5 percent fat. Garant's organic labeling tells us that a product is organic and sometimes even KRAV-labeled. Our assortment is constantly filled with more EKO products."
+  },
+  {
+    "image_path": "images/Garant-Ecological-Medium-Fat-Milk_002.jpg",
+    "text_path": "descriptions/Garant-Ecological-Medium-Fat-Milk_002.txt",
+    "label": "liquid",
+    "class_name": "Garant-Ecological-Medium-Fat-Milk",
+    "coarse_class": "Milk",
+    "category": "Packages",
+    "description": "Organic skimmed milk from our Swedish KRAV farms. 1.5 percent fat. Garant's organic labeling tells us that a product is organic and sometimes even KRAV-labeled. Our assortment is constantly filled with more EKO products."
+  },
+  {
+    "image_path": "images/Garant-Ecological-Medium-Fat-Milk_003.jpg",
+    "text_path": "descriptions/Garant-Ecological-Medium-Fat-Milk_003.txt",
+    "label": "liquid",
+    "class_name": "Garant-Ecological-Medium-Fat-Milk",
+    "coarse_class": "Milk",
+    "category": "Packages",
+    "description": "Organic skimmed milk from our Swedish KRAV farms. 1.5 percent fat. Garant's organic labeling tells us that a product is organic and sometimes even KRAV-labeled. Our assortment is constantly filled with more EKO products."
+  },
+  {
+    "image_path": "images/Garant-Ecological-Medium-Fat-Milk_004.jpg",
+    "text_path": "descriptions/Garant-Ecological-Medium-Fat-Milk_004.txt",
+    "label": "liquid",
+    "class_name": "Garant-Ecological-Medium-Fat-Milk",
+    "coarse_class": "Milk",
+    "category": "Packages",
+    "description": "Organic skimmed milk from our Swedish KRAV farms. 1.5 percent fat. Garant's organic labeling tells us that a product is organic and sometimes even KRAV-labeled. Our assortment is constantly filled with more EKO products."
+  },
+  {
+    "image_path": "images/Garant-Ecological-Medium-Fat-Milk_005.jpg",
+    "text_path": "descriptions/Garant-Ecological-Medium-Fat-Milk_005.txt",
+    "label": "liquid",
+    "class_name": "Garant-Ecological-Medium-Fat-Milk",
+    "coarse_class": "Milk",
+    "category": "Packages",
+    "description": "Organic skimmed milk from our Swedish KRAV farms. 1.5 percent fat. Garant's organic labeling tells us that a product is organic and sometimes even KRAV-labeled. Our assortment is constantly filled with more EKO products."
+  },
+  {
+    "image_path": "images/Garant-Ecological-Medium-Fat-Milk_006.jpg",
+    "text_path": "descriptions/Garant-Ecological-Medium-Fat-Milk_006.txt",
+    "label": "liquid",
+    "class_name": "Garant-Ecological-Medium-Fat-Milk",
+    "coarse_class": "Milk",
+    "category": "Packages",
+    "description": "Organic skimmed milk from our Swedish KRAV farms. 1.5 percent fat. Garant's organic labeling tells us that a product is organic and sometimes even KRAV-labeled. Our assortment is constantly filled with more EKO products."
+  },
+  {
+    "image_path": "images/Garant-Ecological-Standard-Milk_001.jpg",
+    "text_path": "descriptions/Garant-Ecological-Standard-Milk_001.txt",
+    "label": "liquid",
+    "class_name": "Garant-Ecological-Standard-Milk",
+    "coarse_class": "Milk",
+    "category": "Packages",
+    "description": "Ecological milk from Swedish KRAV-labeled farms."
+  },
+  {
+    "image_path": "images/Garant-Ecological-Standard-Milk_002.jpg",
+    "text_path": "descriptions/Garant-Ecological-Standard-Milk_002.txt",
+    "label": "liquid",
+    "class_name": "Garant-Ecological-Standard-Milk",
+    "coarse_class": "Milk",
+    "category": "Packages",
+    "description": "Ecological milk from Swedish KRAV-labeled farms."
+  },
+  {
+    "image_path": "images/Garant-Ecological-Standard-Milk_003.jpg",
+    "text_path": "descriptions/Garant-Ecological-Standard-Milk_003.txt",
+    "label": "liquid",
+    "class_name": "Garant-Ecological-Standard-Milk",
+    "coarse_class": "Milk",
+    "category": "Packages",
+    "description": "Ecological milk from Swedish KRAV-labeled farms."
+  },
+  {
+    "image_path": "images/Garant-Ecological-Standard-Milk_004.jpg",
+    "text_path": "descriptions/Garant-Ecological-Standard-Milk_004.txt",
+    "label": "liquid",
+    "class_name": "Garant-Ecological-Standard-Milk",
+    "coarse_class": "Milk",
+    "category": "Packages",
+    "description": "Ecological milk from Swedish KRAV-labeled farms."
+  },
+  {
+    "image_path": "images/Garant-Ecological-Standard-Milk_005.jpg",
+    "text_path": "descriptions/Garant-Ecological-Standard-Milk_005.txt",
+    "label": "liquid",
+    "class_name": "Garant-Ecological-Standard-Milk",
+    "coarse_class": "Milk",
+    "category": "Packages",
+    "description": "Ecological milk from Swedish KRAV-labeled farms."
+  },
+  {
+    "image_path": "images/Garant-Ecological-Standard-Milk_006.jpg",
+    "text_path": "descriptions/Garant-Ecological-Standard-Milk_006.txt",
+    "label": "liquid",
+    "class_name": "Garant-Ecological-Standard-Milk",
+    "coarse_class": "Milk",
+    "category": "Packages",
+    "description": "Ecological milk from Swedish KRAV-labeled farms."
+  },
+  {
+    "image_path": "images/Oatly-Oat-Milk_001.jpg",
+    "text_path": "descriptions/Oatly-Oat-Milk_001.txt",
+    "label": "liquid",
+    "class_name": "Oatly-Oat-Milk",
+    "coarse_class": "Oat-Milk",
+    "category": "Packages",
+    "description": "A natural oat drink, enriched with calcium and vitamins. Has long shelf life and can be stored at room temperature."
+  },
+  {
+    "image_path": "images/Oatly-Oat-Milk_002.jpg",
+    "text_path": "descriptions/Oatly-Oat-Milk_002.txt",
+    "label": "liquid",
+    "class_name": "Oatly-Oat-Milk",
+    "coarse_class": "Oat-Milk",
+    "category": "Packages",
+    "description": "A natural oat drink, enriched with calcium and vitamins. Has long shelf life and can be stored at room temperature."
+  },
+  {
+    "image_path": "images/Oatly-Oat-Milk_003.jpg",
+    "text_path": "descriptions/Oatly-Oat-Milk_003.txt",
+    "label": "liquid",
+    "class_name": "Oatly-Oat-Milk",
+    "coarse_class": "Oat-Milk",
+    "category": "Packages",
+    "description": "A natural oat drink, enriched with calcium and vitamins. Has long shelf life and can be stored at room temperature."
+  },
+  {
+    "image_path": "images/Oatly-Oat-Milk_004.jpg",
+    "text_path": "descriptions/Oatly-Oat-Milk_004.txt",
+    "label": "liquid",
+    "class_name": "Oatly-Oat-Milk",
+    "coarse_class": "Oat-Milk",
+    "category": "Packages",
+    "description": "A natural oat drink, enriched with calcium and vitamins. Has long shelf life and can be stored at room temperature."
+  },
+  {
+    "image_path": "images/Oatly-Oat-Milk_005.jpg",
+    "text_path": "descriptions/Oatly-Oat-Milk_005.txt",
+    "label": "liquid",
+    "class_name": "Oatly-Oat-Milk",
+    "coarse_class": "Oat-Milk",
+    "category": "Packages",
+    "description": "A natural oat drink, enriched with calcium and vitamins. Has long shelf life and can be stored at room temperature."
+  },
+  {
+    "image_path": "images/Orange-Bell-Pepper_001.jpg",
+    "text_path": "descriptions/Orange-Bell-Pepper_001.txt",
+    "label": "grocery",
+    "class_name": "Orange",
+    "coarse_class": "Orange",
+    "category": "Fruit",
+    "description": "There are many different types of oranges that ripen and is sold during different parts of the year. The orange is a very important vitamin C source and the vitamins are best kept if the fruit is eaten naturally."
+  },
+  {
+    "image_path": "images/Orange-Bell-Pepper_002.jpg",
+    "text_path": "descriptions/Orange-Bell-Pepper_002.txt",
+    "label": "grocery",
+    "class_name": "Orange",
+    "coarse_class": "Orange",
+    "category": "Fruit",
+    "description": "There are many different types of oranges that ripen and is sold during different parts of the year. The orange is a very important vitamin C source and the vitamins are best kept if the fruit is eaten naturally."
+  },
+  {
+    "image_path": "images/Orange-Bell-Pepper_003.jpg",
+    "text_path": "descriptions/Orange-Bell-Pepper_003.txt",
+    "label": "grocery",
+    "class_name": "Orange",
+    "coarse_class": "Orange",
+    "category": "Fruit",
+    "description": "There are many different types of oranges that ripen and is sold during different parts of the year. The orange is a very important vitamin C source and the vitamins are best kept if the fruit is eaten naturally."
+  },
+  {
+    "image_path": "images/Orange-Bell-Pepper_004.jpg",
+    "text_path": "descriptions/Orange-Bell-Pepper_004.txt",
+    "label": "grocery",
+    "class_name": "Orange",
+    "coarse_class": "Orange",
+    "category": "Fruit",
+    "description": "There are many different types of oranges that ripen and is sold during different parts of the year. The orange is a very important vitamin C source and the vitamins are best kept if the fruit is eaten naturally."
+  },
+  {
+    "image_path": "images/Orange-Bell-Pepper_005.jpg",
+    "text_path": "descriptions/Orange-Bell-Pepper_005.txt",
+    "label": "grocery",
+    "class_name": "Orange",
+    "coarse_class": "Orange",
+    "category": "Fruit",
+    "description": "There are many different types of oranges that ripen and is sold during different parts of the year. The orange is a very important vitamin C source and the vitamins are best kept if the fruit is eaten naturally."
+  }
+]

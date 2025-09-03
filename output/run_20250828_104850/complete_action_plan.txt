@@ -1,0 +1,18 @@
+# Complete Action Plan for Simulation Execution
+# Generated from task: cook chicken with salt
+# Total actions: 14
+
+ 1. move pr2 kitchen_corner fridge
+ 2. pickup_from_container pr2 chicken fridge
+ 3. move pr2 fridge countertop_2
+ 4. put_food_in_cookware pr2 chicken pot countertop_2
+ 5. move pr2 countertop_2 cabinet
+ 6. pickup_from_container pr2 salt cabinet
+ 7. move pr2 cabinet countertop_2
+ 8. put_food_in_cookware pr2 salt pot countertop_2
+ 9. pickup_from_region pr2 pot countertop_2
+10. move pr2 countertop_2 stove
+11. place_cookware_on_stovetop pr2 pot stove
+12. turn_on_stove pr2 stove
+13. wait_for_food_to_cook stove pot chicken
+14. turn_off_stove pr2 stove

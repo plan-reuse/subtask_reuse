@@ -1,0 +1,79 @@
+action: move (?r - robot ?from - region ?to - region)
+r-robot = ['pr2']
+from-region = ['kitchen_corner', 'countertop_1', 'countertop_2', 'sink', 'fridge', 'cabinet', 'stove']
+to-region = ['kitchen_corner', 'countertop_1', 'countertop_2', 'sink', 'fridge', 'cabinet', 'stove']
+
+action: open_container (?r - robot ?c - container)
+r-robot = ['pr2']
+c-container = ['fridge', 'cabinet']
+
+action: close_container (?r - robot ?c - container)
+r-robot = ['pr2']
+c-container = ['fridge', 'cabinet']
+
+action: pickup_from_region (?r - robot ?m - movable ?l - region)
+r-robot = ['pr2']
+m-movable = ['plate', 'pot', 'salt', 'pepper', 'chicken', 'potato', 'tomato', 'cabbage', 'zucchini', 'artichoke', 'oil', 'vinegar', 'milk']
+l-region = ['kitchen_corner', 'countertop_1', 'countertop_2', 'sink', 'fridge', 'cabinet', 'stove']
+
+action: putdown_to_region (?r - robot ?m - movable ?l - region)
+r-robot = ['pr2']
+m-movable = ['plate', 'pot', 'salt', 'pepper', 'chicken', 'potato', 'tomato', 'cabbage', 'zucchini', 'artichoke', 'oil', 'vinegar', 'milk']
+l-region = ['kitchen_corner', 'countertop_1', 'countertop_2', 'sink', 'fridge', 'cabinet', 'stove']
+
+action: pickup_from_container (?r - robot ?m - movable ?c - container)
+r-robot = ['pr2']
+m-movable = ['plate', 'pot', 'salt', 'pepper', 'chicken', 'potato', 'tomato', 'cabbage', 'zucchini', 'artichoke', 'oil', 'vinegar', 'milk']
+c-container = ['fridge', 'cabinet']
+
+action: putdown_to_container (?r - robot ?m - movable ?c - container)
+r-robot = ['pr2']
+m-movable = ['plate', 'pot', 'salt', 'pepper', 'chicken', 'potato', 'tomato', 'cabbage', 'zucchini', 'artichoke', 'oil', 'vinegar', 'milk']
+c-container = ['fridge', 'cabinet']
+
+action: put_food_in_cookware (?r - robot ?f - food ?cw - cookware ?l - region)
+r-robot = ['pr2']
+f-food = ['salt', 'pepper', 'chicken', 'potato', 'tomato', 'cabbage', 'zucchini', 'artichoke', 'oil', 'vinegar', 'milk']
+cw-cookware = ['pot']
+l-region = ['kitchen_corner', 'countertop_1', 'countertop_2', 'sink', 'fridge', 'cabinet', 'stove']
+
+action: take_food_from_cookware (?r - robot ?f - food ?cw - cookware ?l - region)
+r-robot = ['pr2']
+f-food = ['salt', 'pepper', 'chicken', 'potato', 'tomato', 'cabbage', 'zucchini', 'artichoke', 'oil', 'vinegar', 'milk']
+cw-cookware = ['pot']
+l-region = ['kitchen_corner', 'countertop_1', 'countertop_2', 'sink', 'fridge', 'cabinet', 'stove']
+
+action: place_food_on_utensil (?r - robot ?f - food ?u - utensil ?l - region)
+r-robot = ['pr2']
+f-food = ['salt', 'pepper', 'chicken', 'potato', 'tomato', 'cabbage', 'zucchini', 'artichoke', 'oil', 'vinegar', 'milk']
+u-utensil = ['plate']
+l-region = ['kitchen_corner', 'countertop_1', 'countertop_2', 'sink', 'fridge', 'cabinet', 'stove']
+
+action: take_food_from_utensil (?r - robot ?f - food ?u - utensil ?l - region)
+r-robot = ['pr2']
+f-food = ['salt', 'pepper', 'chicken', 'potato', 'tomato', 'cabbage', 'zucchini', 'artichoke', 'oil', 'vinegar', 'milk']
+u-utensil = ['plate']
+l-region = ['kitchen_corner', 'countertop_1', 'countertop_2', 'sink', 'fridge', 'cabinet', 'stove']
+
+action: place_cookware_on_stovetop (?r - robot ?cw - cookware ?s - stovetop)
+r-robot = ['pr2']
+cw-cookware = ['pot']
+s-stovetop = ['stove']
+
+action: remove_cookware_from_stovetop (?r - robot ?cw - cookware ?s - stovetop)
+r-robot = ['pr2']
+cw-cookware = ['pot']
+s-stovetop = ['stove']
+
+action: turn_on_stove (?r - robot ?s - stovetop)
+r-robot = ['pr2']
+s-stovetop = ['stove']
+
+action: turn_off_stove (?r - robot ?s - stovetop)
+r-robot = ['pr2']
+s-stovetop = ['stove']
+
+action: wait_for_food_to_cook (?s - stovetop ?cw - cookware ?f - food)
+s-stovetop = ['stove']
+cw-cookware = ['pot']
+f-food = ['salt', 'pepper', 'chicken', 'potato', 'tomato', 'cabbage', 'zucchini', 'artichoke', 'oil', 'vinegar', 'milk']

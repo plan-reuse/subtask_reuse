@@ -1,0 +1,36 @@
+(at_robot pr2 kitchen_corner) | The robot named PR2 is located in the kitchen corner area.
+
+(handempty pr2) | PR2's hand is currently empty.
+
+(at plate countertop_1) | The plate is placed on countertop 1.
+
+(at pot countertop_2) | The pot is placed on countertop 2.
+
+(inside salt cabinet) | The salt is stored inside the cabinet.
+
+(inside pepper cabinet) | The pepper is stored inside the cabinet.
+
+(inside oil cabinet) | The oil is stored inside the cabinet.
+
+(inside vinegar cabinet) | The vinegar is stored inside the cabinet.
+
+(door_open cabinet) | The cabinet door is currently open.
+
+(inside chicken fridge) | The chicken is stored inside the fridge.
+
+(inside potato fridge) | The potato is stored inside the fridge.
+
+(inside tomato fridge) | The tomato is stored inside the fridge.
+
+(inside cabbage fridge) | The cabbage is stored inside the fridge.
+
+(inside zucchini fridge) | The zucchini is stored inside the fridge.
+
+(inside artichoke fridge) | The artichoke is stored inside the fridge.
+
+(inside milk fridge) | The milk is stored inside the fridge.
+
+(door_open fridge) | The fridge door is currently open.
+
+(turned_off stove) | The stove is currently turned off.
+

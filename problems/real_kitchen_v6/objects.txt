@@ -1,0 +1,7 @@
+"robot": ["stretch_robot"],
+"region": ["kitchen_corner", "countertop", "sink"],
+"container": ["fridge", "cabinet"],
+"stovetop": ["stove"],
+"utensil": ["bowl", "plate"],
+"cookware": ["pot", "pan"],
+"food": [ "pancake", "bread", "salt", "butter", "chicken", "fish", "potato", "tomato", "cabbage", "lettuce", "apple"]

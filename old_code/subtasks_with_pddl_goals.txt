@@ -1,0 +1,32 @@
+Subtask 1: Open the fridge to access the chicken and potato.
+PDDL Goal 1: (door_open fridge)
+
+Subtask 2: Pick up the chicken from the fridge.
+PDDL Goal 2: (holding stretch_robot chicken)
+
+Subtask 3: Put down the chicken on the countertop.
+PDDL Goal 3: (at chicken countertop)
+
+Subtask 4: Pick up the potato from the fridge.
+PDDL Goal 4: (holding stretch_robot potato)
+
+Subtask 5: Put down the potato on the countertop.
+PDDL Goal 5: (at potato countertop)
+
+Subtask 6: Pick up the pot from the countertop.
+PDDL Goal 6: (holding stretch_robot pot)
+
+Subtask 7: Place the pot on the stovetop.
+PDDL Goal 7: (on_stovetop pot stove)
+
+Subtask 8: Put the chicken into the pot.
+PDDL Goal 8: (in_cookware chicken pot)
+
+Subtask 9: Put the potato into the pot.
+PDDL Goal 9: (in_cookware potato pot)
+
+Subtask 10: Turn on the stove to start cooking.
+PDDL Goal 10: (turned_on stove)
+
+Subtask 11: Wait for the chicken and potato to cook.
+PDDL Goal 11: (cooked chicken) AND (cooked potato)

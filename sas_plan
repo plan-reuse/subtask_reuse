@@ -1,0 +1,3 @@
+(move pr2 cabinet countertop_2)
+(put_food_in_cookware pr2 salt pot countertop_2)
+; cost = 2 (unit cost)

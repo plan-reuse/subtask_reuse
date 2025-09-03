@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+
+# Data / outputs
+data/
+outputs/
+logs/
+
+# Models & checkpoints
+model/checkpoints/
+*.pth
+*.pt
+*.ckpt
+
+# OS junk
+.DS_Store

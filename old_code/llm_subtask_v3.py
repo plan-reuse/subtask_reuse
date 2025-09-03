@@ -1,0 +1,583 @@
+import os
+import time
+import subprocess
+import re
+from dotenv import load_dotenv
+from openai import OpenAI
+
+# Load environment variables from .env file
+load_dotenv()
+
+def generate_subtasks_with_pddl_goals(task_instructions, predicates_file, actions_file, objects_file, init_state_file, model="gpt-4o", max_tokens=2000):
+    """Generate natural language subtasks and corresponding PDDL goals using OpenAI API"""
+    api_key = os.environ.get("OPENAI_API_KEY")
+    if not api_key:
+        raise ValueError("OPENAI_API_KEY not found in environment variables")
+    
+    client = OpenAI(api_key=api_key)
+    
+    # Read the text files directly
+    with open(predicates_file, 'r') as f:
+        predicates_content = f.read()
+    
+    with open(actions_file, 'r') as f:
+        actions_content = f.read()
+    
+    with open(objects_file, 'r') as f:
+        objects_content = f.read()
+    
+    with open(init_state_file, 'r') as f:
+        init_state_content = f.read()
+    
+    # Create the prompt for the API
+    prompt = f"""
+    Task: {task_instructions}
+    
+    I will provide you with information about a kitchen domain, including available predicates, actions, objects, and their initial states. Your job is to break down the main task into natural language subtasks that need to be completed in sequence, and provide the corresponding PDDL goal for each subtask.
+    
+    Available Predicates:
+    {predicates_content}
+    
+    Available Actions:
+    {actions_content}
+    
+    Objects by Type:
+    {objects_content}
+    
+    Initial State:
+    {init_state_content}
+    
+    Based on the task description, available actions, object list, and initial states, generate a list of subtasks in natural language that would need to be completed to achieve the goal.
+    
+    Requirements:
+    1. Each subtask should be a clear, concise instruction in natural language in a single sentence
+    2. Explicitly include the objects involved in each subtask
+    3. Make sure the subtasks follow a logical sequence to achieve the goal
+    4. Only include actions that are possible given the predicates and actions available
+    5. For each natural language subtask, provide the corresponding PDDL goal that represents the desired state after completing that subtask
+    
+    Format the response as follows:
+    Subtask 1: [Natural language subtask]
+    PDDL Goal 1: [PDDL goal expression]
+    
+    Subtask 2: [Natural language subtask]
+    PDDL Goal 2: [PDDL goal expression]
+    
+    ...and so on.
+    """
+
+    # Call the OpenAI API
+    response = client.chat.completions.create(
+        model=model,
+        messages=[
+            {"role": "system", "content": "You are an AI specialized in planning and PDDL. Your task is to generate natural language subtask plans based on high-level instructions and available actions, along with their corresponding PDDL goals."},
+            {"role": "user", "content": prompt}
+        ],
+        max_tokens=max_tokens
+    )
+    
+    # Extract and return the generated plan
+    plan = response.choices[0].message.content
+    return plan
+
+def parse_subtasks_and_goals(plan_text):
+    """Parse the generated plan text to extract subtasks and PDDL goals"""
+    lines = plan_text.strip().split('\n')
+    subtasks = []
+    pddl_goals = []
+    
+    current_subtask = ""
+    current_goal = ""
+    
+    for line in lines:
+        line = line.strip()
+        if line.startswith("Subtask"):
+            if current_subtask and current_goal:
+                subtasks.append(current_subtask)
+                pddl_goals.append(current_goal)
+            current_subtask = line.split(":", 1)[1].strip() if ":" in line else ""
+            current_goal = ""
+        elif line.startswith("PDDL Goal"):
+            current_goal = line.split(":", 1)[1].strip() if ":" in line else ""
+    
+    # Add the last pair
+    if current_subtask and current_goal:
+        subtasks.append(current_subtask)
+        pddl_goals.append(current_goal)
+    
+    return subtasks, pddl_goals
+
+def create_problem_file_with_goal(empty_problem_file, output_problem_file, pddl_goal):
+    """Create a new problem file with the specified PDDL goal"""
+    with open(empty_problem_file, 'r') as f:
+        content = f.read()
+    
+    # Replace the empty goal section with the actual goal
+    goal_section = f"(:goal\n    {pddl_goal}\n  )"
+    updated_content = re.sub(r'\(:goal\s*\n\s*\)', goal_section, content)
+    
+    with open(output_problem_file, 'w') as f:
+        f.write(updated_content)
+    
+    print(f"Created problem file with goal: {output_problem_file}")
+
+def run_classical_planner(domain_file, problem_file, search_option='astar(blind())'):
+    """Run the Fast Downward classical planner and extract the action plan"""
+    
+    # Configuration
+    PDDL_ROOT = "/home/shaid/Documents/PDDL"
+    FAST_DOWNWARD_DIR = os.path.join(PDDL_ROOT, "downward")
+    fd_script = os.path.join(FAST_DOWNWARD_DIR, "fast-downward.py")
+    
+    command = [
+        "python3", fd_script,
+        domain_file,
+        problem_file,
+        "--search", search_option
+    ]
+    
+    print(f"Running classical planner with command: {' '.join(command)}")
+    
+    try:
+        result = subprocess.run(command, capture_output=True, text=True, timeout=60)
+        
+        plan_lines = []
+        stdout_lines = result.stdout.split('\n')
+        
+        plan_started = False
+        for line in stdout_lines:
+            if line.startswith('[') or line.startswith('INFO') or not line.strip():
+                if plan_started and line.startswith('['):
+                    plan_started = False
+                continue
+            
+            if ('(' in line and ')' in line) or plan_started:
+                plan_started = True
+                clean_line = re.sub(r'\s+\(\d+\)$', '', line)
+                plan_lines.append(clean_line)
+        
+        if plan_lines:
+            return plan_lines, True
+        else:
+            if "Solution found" in result.stdout:
+                return ["A plan was found but couldn't be extracted properly."], False
+            else:
+                return ["No plan found."], False
+                
+    except subprocess.TimeoutExpired:
+        return ["Planner timed out after 60 seconds."], False
+    except Exception as e:
+        return [f"Error running planner: {str(e)}"], False
+
+def parse_action_predicates(action):
+    """Parse a PDDL action to extract the predicates it affects based on the domain"""
+    effects = []
+    
+    # Clean the action string
+    action = action.strip()
+    
+    # Movement effects (domain uses at_robot predicate)
+    if action.startswith("move "):
+        parts = action.split()
+        if len(parts) >= 4:
+            robot, from_loc, to_loc = parts[1], parts[2], parts[3]
+            effects.append(f"(not (at_robot {robot} {from_loc}))")
+            effects.append(f"(at_robot {robot} {to_loc})")
+    
+    # Container opening effects
+    elif action.startswith("open_container "):
+        parts = action.split()
+        if len(parts) >= 3:
+            robot, container = parts[1], parts[2]
+            effects.append(f"(door_open {container})")
+            effects.append(f"(not (door_closed {container}))")
+    
+    # Container closing effects
+    elif action.startswith("close_container "):
+        parts = action.split()
+        if len(parts) >= 3:
+            robot, container = parts[1], parts[2]
+            effects.append(f"(door_closed {container})")
+            effects.append(f"(not (door_open {container}))")
+    
+    # Pickup from region
+    elif action.startswith("pickup_from_region "):
+        parts = action.split()
+        if len(parts) >= 4:
+            robot, obj, location = parts[1], parts[2], parts[3]
+            effects.append(f"(holding {robot} {obj})")
+            effects.append(f"(not (at {obj} {location}))")
+            effects.append(f"(not (handempty {robot}))")
+    
+    # Putdown to region
+    elif action.startswith("putdown_to_region "):
+        parts = action.split()
+        if len(parts) >= 4:
+            robot, obj, location = parts[1], parts[2], parts[3]
+            effects.append(f"(at {obj} {location})")
+            effects.append(f"(handempty {robot})")
+            effects.append(f"(not (holding {robot} {obj}))")
+    
+    # Pickup from container
+    elif action.startswith("pickup_from_container "):
+        parts = action.split()
+        if len(parts) >= 4:
+            robot, obj, container = parts[1], parts[2], parts[3]
+            effects.append(f"(holding {robot} {obj})")
+            effects.append(f"(not (inside {obj} {container}))")
+            effects.append(f"(not (handempty {robot}))")
+    
+    # Putdown to container
+    elif action.startswith("putdown_to_container "):
+        parts = action.split()
+        if len(parts) >= 4:
+            robot, obj, container = parts[1], parts[2], parts[3]
+            effects.append(f"(inside {obj} {container})")
+            effects.append(f"(handempty {robot})")
+            effects.append(f"(not (holding {robot} {obj}))")
+    
+    # Put food in cookware
+    elif action.startswith("put_food_in_cookware "):
+        parts = action.split()
+        if len(parts) >= 5:
+            robot, food, cookware, location = parts[1], parts[2], parts[3], parts[4]
+            effects.append(f"(in_cookware {food} {cookware})")
+            effects.append(f"(handempty {robot})")
+            effects.append(f"(not (holding {robot} {food}))")
+    
+    # Take food from cookware
+    elif action.startswith("take_food_from_cookware "):
+        parts = action.split()
+        if len(parts) >= 5:
+            robot, food, cookware, location = parts[1], parts[2], parts[3], parts[4]
+            effects.append(f"(holding {robot} {food})")
+            effects.append(f"(not (in_cookware {food} {cookware}))")
+            effects.append(f"(not (handempty {robot}))")
+    
+    # Place food on utensil
+    elif action.startswith("place_food_on_utensil "):
+        parts = action.split()
+        if len(parts) >= 5:
+            robot, food, utensil, location = parts[1], parts[2], parts[3], parts[4]
+            effects.append(f"(on_utensil {food} {utensil})")
+            effects.append(f"(handempty {robot})")
+            effects.append(f"(not (holding {robot} {food}))")
+    
+    # Take food from utensil
+    elif action.startswith("take_food_from_utensil "):
+        parts = action.split()
+        if len(parts) >= 5:
+            robot, food, utensil, location = parts[1], parts[2], parts[3], parts[4]
+            effects.append(f"(holding {robot} {food})")
+            effects.append(f"(not (on_utensil {food} {utensil}))")
+            effects.append(f"(not (handempty {robot}))")
+    
+    # Place cookware on stovetop
+    elif action.startswith("place_cookware_on_stovetop "):
+        parts = action.split()
+        if len(parts) >= 4:
+            robot, cookware, stovetop = parts[1], parts[2], parts[3]
+            effects.append(f"(on_stovetop {cookware} {stovetop})")
+            effects.append(f"(handempty {robot})")
+            effects.append(f"(not (holding {robot} {cookware}))")
+    
+    # Remove cookware from stovetop
+    elif action.startswith("remove_cookware_from_stovetop "):
+        parts = action.split()
+        if len(parts) >= 4:
+            robot, cookware, stovetop = parts[1], parts[2], parts[3]
+            effects.append(f"(holding {robot} {cookware})")
+            effects.append(f"(not (on_stovetop {cookware} {stovetop}))")
+            effects.append(f"(not (handempty {robot}))")
+    
+    # Turn on stove
+    elif action.startswith("turn_on_stove "):
+        parts = action.split()
+        if len(parts) >= 3:
+            robot, stove = parts[1], parts[2]
+            effects.append(f"(turned_on {stove})")
+            effects.append(f"(not (turned_off {stove}))")
+    
+    # Turn off stove
+    elif action.startswith("turn_off_stove "):
+        parts = action.split()
+        if len(parts) >= 3:
+            robot, stove = parts[1], parts[2]
+            effects.append(f"(turned_off {stove})")
+            effects.append(f"(not (turned_on {stove}))")
+    
+    # Wait for food to cook
+    elif action.startswith("wait_for_food_to_cook "):
+        parts = action.split()
+        if len(parts) >= 4:
+            stovetop, cookware, food = parts[1], parts[2], parts[3]
+            effects.append(f"(cooked {food})")
+    
+    return effects
+
+def extract_predicates_from_init(init_state_text):
+    """Extract all predicates from an init state text"""
+    predicates = set()
+    
+    # Remove the (:init and closing )
+    content = init_state_text.strip()
+    if content.startswith("(:init"):
+        content = content[6:]  # Remove "(:init"
+    if content.endswith(")"):
+        content = content[:-1]  # Remove closing ")"
+    
+    # Split into lines and process each
+    lines = content.split('\n')
+    current_predicate = ""
+    
+    for line in lines:
+        line = line.strip()
+        if not line:
+            continue
+            
+        # Handle multi-line predicates
+        current_predicate += " " + line if current_predicate else line
+        
+        # Count parentheses to determine if predicate is complete
+        open_count = current_predicate.count('(')
+        close_count = current_predicate.count(')')
+        
+        if open_count == close_count and open_count > 0:
+            # Complete predicate found
+            pred = current_predicate.strip()
+            if pred and not pred.startswith('(:'):
+                predicates.add(pred)
+            current_predicate = ""
+    
+    return predicates
+
+def update_initial_state(current_init_state, action_plan):
+    """Update the initial state based on the executed action plan"""
+    print(f"\n--- Updating initial state based on {len(action_plan)} actions ---")
+    
+    # Extract predicates from current init state
+    init_predicates = extract_predicates_from_init(current_init_state)
+    
+    print(f"Starting with {len(init_predicates)} initial predicates")
+    
+    # Apply effects of each action
+    for i, action in enumerate(action_plan):
+        print(f"Applying action {i+1}: {action}")
+        effects = parse_action_predicates(action)
+        print(f"  Generated effects: {effects}")
+        
+        for effect in effects:
+            if effect.startswith("(not "):
+                # Remove predicate
+                predicate_to_remove = effect[5:-1]  # Remove "(not " and ")"
+                if predicate_to_remove in init_predicates:
+                    init_predicates.remove(predicate_to_remove)
+                    print(f"  Removed: {predicate_to_remove}")
+                else:
+                    print(f"  Could not remove (not found): {predicate_to_remove}")
+            else:
+                # Add predicate
+                init_predicates.add(effect)
+                print(f"  Added: {effect}")
+    
+    print(f"Final state has {len(init_predicates)} predicates")
+    
+    # Reconstruct the init state string
+    updated_init_state = "(:init\n"
+    for predicate in sorted(init_predicates):
+        updated_init_state += f"    {predicate}\n"
+    updated_init_state += "  )"
+    
+    return updated_init_state
+
+def create_updated_problem_file(base_problem_file, updated_init_state, pddl_goal, output_file):
+    """Create a new problem file with updated initial state and goal"""
+    with open(base_problem_file, 'r') as f:
+        content = f.read()
+    
+    # Find the current init section and replace it
+    # Use more precise regex that handles multi-line init sections
+    init_pattern = r'\(:init\s*\n.*?\n\s*\)'
+    
+    # Check if init section exists
+    init_match = re.search(init_pattern, content, re.DOTALL)
+    if init_match:
+        # Replace the existing init section
+        updated_content = re.sub(init_pattern, updated_init_state, content, flags=re.DOTALL)
+    else:
+        # If no init section found, try to find (:init) and replace
+        updated_content = re.sub(r'\(:init\s*\)', updated_init_state, content, flags=re.DOTALL)
+    
+    # Replace the goal section
+    goal_section = f"(:goal\n    {pddl_goal}\n  )"
+    updated_content = re.sub(r'\(:goal\s*\n?\s*\)', goal_section, updated_content, flags=re.DOTALL)
+    
+    # Write the updated content
+    with open(output_file, 'w') as f:
+        f.write(updated_content)
+    
+    print(f"Created updated problem file: {output_file}")
+    
+    # Debug: Print the complete updated problem file
+    print(f"\n--- Contents of {output_file} ---")
+    with open(output_file, 'r') as f:
+        content = f.read()
+    print(content)
+    print("--- End of file ---")
+
+def solve_subtask(subtask_num, subtask, pddl_goal, domain_file, problem_file, current_init_state=None):
+    """Solve a single subtask and return the action plan and updated initial state"""
+    print(f"\n{'='*50}")
+    print(f"SOLVING SUBTASK {subtask_num}")
+    print(f"{'='*50}")
+    print(f"Subtask: {subtask}")
+    print(f"PDDL Goal: {pddl_goal}")
+    
+    # Create problem file for this subtask
+    if current_init_state:
+        # Use updated initial state
+        temp_problem_file = f"temp_problem_subtask_{subtask_num}.pddl"
+        create_updated_problem_file(problem_file, current_init_state, pddl_goal, temp_problem_file)
+        problem_file_to_use = temp_problem_file
+    else:
+        # Use original problem file with goal
+        problem_file_to_use = f"problem_subtask_{subtask_num}.pddl"
+        create_problem_file_with_goal(problem_file, problem_file_to_use, pddl_goal)
+    
+    # Run planner
+    action_plan, success = run_classical_planner(domain_file, problem_file_to_use)
+    
+    print(f"\n--- Action Plan for Subtask {subtask_num} ---")
+    if success:
+        print(f"Successfully generated action plan with {len(action_plan)} steps:")
+        for i, action in enumerate(action_plan, 1):
+            print(f"{i}. {action}")
+        
+        # Update initial state if we have one
+        if current_init_state:
+            updated_init_state = update_initial_state(current_init_state, action_plan)
+        else:
+            # For first subtask, read the original init state from the empty problem file
+            with open(problem_file, 'r') as f:
+                original_content = f.read()
+            # Extract original init state with better parsing
+            init_match = re.search(r'\(:init\s*\n(.*?)\n\s*\)', original_content, re.DOTALL)
+            if init_match:
+                # Reconstruct the full init state
+                init_content = init_match.group(1).strip()
+                original_init = f"(:init\n{init_content}\n  )"
+                print(f"\nOriginal init state extracted:")
+                print(original_init[:200] + "..." if len(original_init) > 200 else original_init)
+                updated_init_state = update_initial_state(original_init, action_plan)
+            else:
+                print("Warning: Could not extract original init state")
+                updated_init_state = None
+        
+        return action_plan, updated_init_state, True
+    else:
+        print("Failed to generate action plan:")
+        for line in action_plan:
+            print(line)
+        return action_plan, current_init_state, False
+
+def main():
+    # Define file paths
+    base_path = "/home/shaid/Documents/PDDL/problems/real_kitchen_v6/"
+    domain_file = os.path.join(base_path, "domain.pddl")
+    empty_problem_file = os.path.join(base_path, "empty_problem.pddl")
+    predicates_file = os.path.join(base_path, "predicates.txt")
+    actions_file = os.path.join(base_path, "actions.txt")
+    objects_file = os.path.join(base_path, "objects.txt")
+    init_state_file = os.path.join(base_path, "init_state.txt")
+    
+    # Task instruction
+    task_instructions = "Prepare a breakfast by cooking chicken and potato."
+    
+    # Model and output parameters
+    model = "gpt-4o-mini"
+    max_tokens = 2000
+    subtasks_output_file = "subtasks_with_pddl_goals.txt"
+    
+    # Step 1: Generate the subtasks with PDDL goals
+    print("\n=== STEP 1: Generating subtasks with PDDL goals ===")
+    start_time = time.time()
+    
+    plan = generate_subtasks_with_pddl_goals(
+        task_instructions,
+        predicates_file,
+        actions_file,
+        objects_file,
+        init_state_file,
+        model=model,
+        max_tokens=max_tokens
+    )
+    
+    end_time = time.time()
+    elapsed_time = end_time - start_time
+    
+    # Step 2: Save and display the generated subtasks
+    print("\n=== STEP 2: Saving and displaying subtasks ===")
+    with open(subtasks_output_file, 'w') as f:
+        f.write(plan)
+    print(f"Subtasks with PDDL goals saved to {subtasks_output_file}")
+    print(f"Generation time: {elapsed_time:.2f} seconds")
+    
+    # Step 3: Parse subtasks and goals
+    print("\n=== STEP 3: Parsing subtasks and goals ===")
+    subtasks, pddl_goals = parse_subtasks_and_goals(plan)
+    
+    if not pddl_goals:
+        print("No PDDL goals found in the generated plan.")
+        return
+    
+    print(f"Found {len(subtasks)} subtasks and {len(pddl_goals)} PDDL goals")
+    for i, (subtask, goal) in enumerate(zip(subtasks[:2], pddl_goals[:2])):  # Show only first 2
+        print(f"Subtask {i+1}: {subtask}")
+        print(f"PDDL Goal {i+1}: {goal}")
+        print()
+    
+    # Step 4: Solve first two subtasks
+    current_init_state = None
+    all_action_plans = []
+    
+    for i in range(min(2, len(subtasks))):  # Solve first 2 subtasks
+        subtask_num = i + 1
+        subtask = subtasks[i]
+        pddl_goal = pddl_goals[i]
+        
+        action_plan, updated_init_state, success = solve_subtask(
+            subtask_num, subtask, pddl_goal, domain_file, empty_problem_file, current_init_state
+        )
+        
+        if success:
+            all_action_plans.append(action_plan)
+            current_init_state = updated_init_state
+        else:
+            print(f"Failed to solve subtask {subtask_num}. Stopping execution.")
+            break
+    
+    # Step 5: Summary
+    print(f"\n{'='*50}")
+    print("FINAL SUMMARY")
+    print(f"{'='*50}")
+    print(f"Task: {task_instructions}")
+    print(f"Subtasks solved: {len(all_action_plans)}/2")
+    
+    total_actions = 0
+    for i, action_plan in enumerate(all_action_plans):
+        print(f"\nSubtask {i+1}: {subtasks[i]}")
+        print(f"Actions ({len(action_plan)}):")
+        for j, action in enumerate(action_plan, 1):
+            print(f"  {j}. {action}")
+        total_actions += len(action_plan)
+    
+    print(f"\nTotal actions executed: {total_actions}")
+    
+    # Save updated initial state for future use
+    if current_init_state:
+        with open("updated_init_state_after_2_subtasks.txt", 'w') as f:
+            f.write(current_init_state)
+        print(f"Updated initial state saved to: updated_init_state_after_2_subtasks.txt")
+
+if __name__ == "__main__":
+    main()

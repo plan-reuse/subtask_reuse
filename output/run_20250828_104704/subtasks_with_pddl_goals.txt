@@ -1,0 +1,11 @@
+Subtask 1: Move to the fridge and pick up the potato.
+PDDL Goal 1: (and (at_robot pr2 fridge) (holding pr2 potato))
+
+Subtask 2: Move to countertop_2 and place the potato in the pot.
+PDDL Goal 2: (and (at_robot pr2 countertop_2) (in_cookware potato pot))
+
+Subtask 3: Move to the stove with the pot, place the pot on the stovetop, and turn on the stove.
+PDDL Goal 3: (and (at_robot pr2 stove) (on_stovetop pot stove) (turned_on stove))
+
+Subtask 4: Wait for the potato to cook, then turn off the stove.
+PDDL Goal 4: (and (at_robot pr2 stove) (cooked potato) (turned_off stove))

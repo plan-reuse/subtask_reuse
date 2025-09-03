@@ -1,0 +1,14 @@
+# Complete Action Plan for Simulation Execution
+# Generated from task: cook a potato
+# Total actions: 10
+
+ 1. move pr2 kitchen_corner fridge
+ 2. pickup_from_container pr2 potato fridge
+ 3. move pr2 fridge countertop_2
+ 4. put_food_in_cookware pr2 potato pot countertop_2
+ 5. pickup_from_region pr2 pot countertop_2
+ 6. move pr2 countertop_2 stove
+ 7. place_cookware_on_stovetop pr2 pot stove
+ 8. turn_on_stove pr2 stove
+ 9. wait_for_food_to_cook stove pot potato
+10. turn_off_stove pr2 stove
